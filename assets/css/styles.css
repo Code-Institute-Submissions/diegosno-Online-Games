@@ -18,3 +18,8 @@ h1 {
   font-size: 1rem;
   cursor: pointer;
 }
+
+.results {
+  display: flex;
+  justify-content: center;
+}
