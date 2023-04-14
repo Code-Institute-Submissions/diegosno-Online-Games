@@ -3,3 +3,4 @@ function chooseOption() {
   const randomIndex = Math.floor(Math.random() * options.length);
   const chosenOption = options[randomIndex];
 }
+const button = document.getElementById("button");
