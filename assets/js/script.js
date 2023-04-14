@@ -7,3 +7,4 @@ const button = document.getElementById("button");
 button.addEventListener("click", chooseOption);
 
 const resultSpan = document.getElementById("result");
+resultSpan.textContent = chosenOption;
