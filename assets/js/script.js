@@ -1,3 +1,2 @@
-const userScore = 0;
-const cpuScore = 0;
-const userScore
+let userScore = 0;
+let cpuScore = 0;
