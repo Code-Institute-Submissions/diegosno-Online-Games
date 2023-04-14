@@ -1,14 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Padauk&display=swap");
+
 body {
   font-family: "Padauk", sans-serif;
   background: #f1fcff;
 }
+
 h1 {
   font-family: "Luckiest Guy", cursive, sans-serif;
   display: flex;
   justify-content: center;
   font-size: 2rem;
 }
+
 .play {
   display: flex;
   justify-content: center;
@@ -21,11 +24,17 @@ h1 {
   font-size: 1rem;
   cursor: pointer;
 }
+#button:hover {
+  transform: scale(1.2);
+}
 
 .results {
-  display: grid;
+  display: flex;
   justify-content: center;
-  align-content: center;
+  justify-items: center;
   font-size: 1rem;
-  border: 1px solid black;
+}
+#result {
+  padding: 5px;
+  color: #666;
 }
