@@ -13,8 +13,19 @@ h1 {
 }
 
 .play {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
   justify-content: space-around;
+}
+
+.play h2 {
+  display: grid;
+  grid-area: 1 / 1 / 2 / 4;
+  justify-content: space-around;
+  text-align: center;
 }
 
 .button {
@@ -23,13 +34,20 @@ h1 {
   outline: none;
   font-size: 1rem;
   cursor: pointer;
+
+  width: 100%;
 }
-#button:hover {
+
+.button:hover {
   transform: scale(1.2);
 }
 
 .results {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
   justify-content: space-around;
   justify-items: center;
   font-size: 1rem;
