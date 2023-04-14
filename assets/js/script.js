@@ -5,6 +5,7 @@ const possibleOptions = document.getElementById("button");
 
 function chooseOption() {
   const options = ["rock", "paper", "scissor"];
+  const chosenOption = options[randomIndex];
 }
 
 possibleOptions.forEach((button) => {
