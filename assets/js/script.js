@@ -1,7 +1,11 @@
 let userScore = 0;
 let cpuScore = 0;
 
-const options = document.getElementsByClassName("button");
 
-const cpuOptions = ["rock", "paper", "scissors"];
+
+const cpuOptions = ['rock', 'paper', 'scissors];
+const options = document.getElementsByClassName('button');
+options.forEach(option => {option.addEventListener('click') 
+    
+});
 const cpuNumber = Math.floor(Math.random() * cpuOptions.length);
