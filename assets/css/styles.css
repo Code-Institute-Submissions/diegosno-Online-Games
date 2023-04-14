@@ -38,6 +38,8 @@ h1 {
   justify-items: center;
   font-size: 1rem;
 }
+
 #result {
   color: #666;
+  padding: 10px;
 }
