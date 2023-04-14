@@ -3,6 +3,8 @@ for (let i = 0; i < buttons.length; i++) {
   buttons[i].addEventListener("click", chooseOption);
 }
 
+function playRound(event) 
+
 function chooseOption() {
   const options = ["rock", "paper", "scissor"];
   const randomIndex = Math.floor(Math.random() * options.length);
@@ -12,11 +14,3 @@ function chooseOption() {
   cpuOptionSpan.textContent = chosenOption;
 }
 
-const buttons = document.querySelectorAll(".button");
-
-for (let i = 0; i < buttons.length; i++) {
-  buttons[i].addEventListener("click", function () {
-    const userOptionSpan = document.getElementById("useroption");
-    userOptionSpan.textContent = this.textContent;
-  });
-}
