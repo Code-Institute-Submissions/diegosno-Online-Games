@@ -4,3 +4,4 @@ function chooseOption() {
   const chosenOption = options[randomIndex];
 }
 const button = document.getElementById("button");
+button.addEventListener("click", chooseOption);
