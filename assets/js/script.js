@@ -6,5 +6,4 @@ function chooseOption() {
 const button = document.getElementById("button");
 button.addEventListener("click", chooseOption);
 
-const resultSpan =
-
+const resultSpan = document.getElementById("result");
