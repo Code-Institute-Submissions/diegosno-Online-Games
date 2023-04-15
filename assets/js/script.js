@@ -61,4 +61,6 @@ function addPoints(result) {
 function restart() {
   userScore = 0;
   cpuScore = 0;
+  userScoreSpan.textContent = userScore;
+  cpuScoreSpan.textContent = cpuScore;
 }
