@@ -12,6 +12,7 @@ for (let i = 0; i < options.length; i++) {
     const cpuChoice = cpuOptions[cpuNumber];
     cpuChoiceSpan.textContent = cpuChoice;
     const result = checkResult();
+    resultSpan.textContent = result;
   });
 }
 
