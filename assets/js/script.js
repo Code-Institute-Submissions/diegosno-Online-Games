@@ -1,13 +1,8 @@
-
-
-document.addEventListener("DOMContentLoaded", function () {
-
-
 const cpuOptions = ["rock", "paper", "scissors"];
 const options = document.getElementsByClassName("button");
 const userChoiceSpan = document.getElementById("user-choice");
 const cpuChoiceSpan = document.getElementById("cpu-choice");
-
+const resultSpan = document.getElementById("result");
 
 for (let i = 0; i < options.length; i++) {
   options[i].addEventListener("click", (event) => {
@@ -18,12 +13,3 @@ for (let i = 0; i < options.length; i++) {
     cpuChoiceSpan.textContent = cpuChoice;
   });
 }
-
-
-function checkResult() {
- 
-
-}
-
-
-
