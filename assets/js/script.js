@@ -17,4 +17,7 @@ for (let i = 0; i < options.length; i++) {
 function checkResult() {
   const userChoice = userChoiceSpan.textContent.toLowerCase();
   const cpuChoice = cpuChoiceSpan.textContent.toLowerCase();
+  if (userChoice === cpuChoice) {
+    return "Draw!";
+  }
 }
