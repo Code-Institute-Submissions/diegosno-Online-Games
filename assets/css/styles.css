@@ -13,6 +13,8 @@ h1 {
 }
 
 h2 {
+  display: grid;
+  justify-content: space-around;
   font-size: 1rem;
 }
 
@@ -25,11 +27,13 @@ h2 {
   justify-content: space-around;
 }
 
-.play h2 {
+.results {
   display: grid;
-  grid-area: 1 / 1 / 2 / 4;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
   justify-content: space-around;
-  text-align: center;
 }
 
 .button {
@@ -38,7 +42,6 @@ h2 {
   outline: none;
   font-size: 1rem;
   cursor: pointer;
-
   width: 100%;
 }
 
@@ -46,38 +49,9 @@ h2 {
   transform: scale(1.2);
 }
 
-.results {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  justify-content: space-around;
-  justify-items: center;
-  font-size: 1rem;
-}
-
 .scores {
   display: flex;
   justify-content: space-around;
-}
-.results p {
-  justify-content: center;
-  height: 50px;
-  width: 50px;
-}
-.results span {
-  justify-content: center;
-  color: #666666;
-}
-.user-choice {
-  display: block;
-  margin: 0;
-}
-
-.user-choice span {
-  display: block;
-  margin: 0;
 }
 
 @media (max-width: 320px) {
