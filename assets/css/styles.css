@@ -61,21 +61,38 @@ h2 {
   color: #666;
   padding: 10px;
 }
-
 .scores {
   display: flex;
   justify-content: space-around;
 }
-
 @media (max-width: 320px) {
   h1 {
     font-family: "Luckiest Guy", cursive, sans-serif;
     display: grid;
     justify-content: space-around;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   h2 {
     font-size: 1rem;
+  }
+  .button {
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 0.8rem;
+    cursor: pointer;
+
+    width: 100%;
+  }
+  .results {
+    font-size: 0.8rem;
+  }
+  #result {
+    font-size: 0.8rem;
+  }
+
+  .scores {
+    font-size: 0.8rem;
   }
 }
