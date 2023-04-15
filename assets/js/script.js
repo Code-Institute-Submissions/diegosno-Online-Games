@@ -63,4 +63,6 @@ function restart() {
   cpuScore = 0;
   userScoreSpan.textContent = userScore;
   cpuScoreSpan.textContent = cpuScore;
+  resultSpan.textContent = "";
+  userChoiceSpan.textContent = "";
 }
