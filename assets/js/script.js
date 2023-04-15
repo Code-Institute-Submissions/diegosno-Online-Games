@@ -40,6 +40,7 @@ function addPoints(result) {
       userScore++;
       break;
     case result.startsWith("AW!"):
+      cpuScore++;
       break;
   }
 }
