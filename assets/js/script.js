@@ -48,4 +48,7 @@ function addPoints(result) {
   }
   userScoreSpan.textContent = userScore;
   cpuScoreSpan.textContent = cpuScore;
+
+  if (userScore === 5) {
+    const popup = document.getElementById("popup");
 }
