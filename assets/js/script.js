@@ -39,5 +39,7 @@ function addPoints(result) {
     case result.startsWith("YAY!"):
       userScore++;
       break;
+    case result.startsWith("AW!"):
+      break;
   }
 }
