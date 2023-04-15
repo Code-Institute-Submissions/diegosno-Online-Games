@@ -49,11 +49,11 @@ function addPoints(result) {
   userScoreSpan.textContent = userScore;
   cpuScoreSpan.textContent = cpuScore;
 
-  if (userScore === 5) {
+  if (userScore === 5 || cpuScore === 5) {
     const popup = document.getElementById("popup");
     const popupText = document.getElementById("popup-text");
-    popupText.textContent = "YOU WON!";
+    popupText.textContent =
+      userScore === 5 ? "You won the game!" : "CPU won the game!";
     popup.style.display = "block";
-  } else if (cpuScore === 5) {
-  
+  }
 }
