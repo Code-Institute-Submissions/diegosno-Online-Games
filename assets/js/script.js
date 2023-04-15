@@ -11,6 +11,7 @@ for (let i = 0; i < options.length; i++) {
     const cpuNumber = Math.floor(Math.random() * cpuOptions.length);
     const cpuChoice = cpuOptions[cpuNumber];
     cpuChoiceSpan.textContent = cpuChoice;
+    const result = checkResult();
   });
 }
 
@@ -18,15 +19,12 @@ function checkResult() {
   const userChoice = userChoiceSpan.textContent.toLowerCase();
   const cpuChoice = cpuChoiceSpan.textContent.toLowerCase();
   if (userChoice === cpuChoice) {
-    return "Draw!";}
-    else if (cpuChoice === "rock"){
-      return (userChoice === 'paper')? "YAY! YOU WIN" : "AW! TRY AGAIN"
-  }
-  else if (cpuChoice === "paper"){
-    return (userChoice === 'scissors')? "YAY! YOU WIN" : "AW! TRY AGAIN"
-  }
-  else if (cpuChoice === "scissors"){
-    return (userChoice === 'rock')? "YAY! YOU WIN" : "AW! TRY AGAIN"
-  }
+    return "Draw!";
+  } else if (cpuChoice === "rock") {
+    return userChoice === "paper" ? "YAY! YOU WIN" : "AW! TRY AGAIN";
+  } else if (cpuChoice === "paper") {
+    return userChoice === "scissors" ? "YAY! YOU WIN" : "AW! TRY AGAIN";
+  } else if (cpuChoice === "scissors") {
+    return userChoice === "rock" ? "YAY! YOU WIN" : "AW! TRY AGAIN";
   }
 }
