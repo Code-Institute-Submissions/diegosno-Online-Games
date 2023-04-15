@@ -54,4 +54,6 @@ function addPoints(result) {
     const popupText = document.getElementById("popup-text");
     popupText.textContent = "YOU WON!";
     popup.style.display = "block";
+  } else if (cpuScore === 5) {
+  
 }
