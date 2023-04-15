@@ -65,4 +65,5 @@ function restart() {
   cpuScoreSpan.textContent = cpuScore;
   resultSpan.textContent = "";
   userChoiceSpan.textContent = "";
+  cpuChoiceSpan.textContent = "";
 }
