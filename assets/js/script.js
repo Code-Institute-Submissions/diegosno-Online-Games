@@ -22,5 +22,8 @@ function checkResult() {
     else if (cpuChoice === "rock"){
       return (userChoice === 'paper')? "YAY! YOU WIN" : "AW! TRY AGAIN"
   }
+  else if (cpuChoice === "paper"){
+    return (userChoice === 'scissors')? "YAY! YOU WIN" : "AW! TRY AGAIN"
+  }
   }
 }
