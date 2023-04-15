@@ -37,6 +37,7 @@ function checkResult() {
 function addPoints(result) {
   switch (true) {
     case result.startsWith("YAY!"):
+      userScore++;
       break;
   }
 }
