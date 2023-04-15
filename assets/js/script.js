@@ -48,20 +48,4 @@ function addPoints(result) {
   }
   userScoreSpan.textContent = userScore;
   cpuScoreSpan.textContent = cpuScore;
-
-  if (userScore === 5 || cpuScore === 5) {
-    resetGame();
-    if (userScore > cpuScore) {
-      message.textContent = "Congratulations! You won!";
-    } else {
-      message.textContent = "Sorry, you lost. Better luck next time!";
-    }
-  }
-}
-
-function resetGame() {
-  userScore = 0;
-  cpuScore = 0;
-  userScoreSpan.textContent = userScore;
-  cpuScoreSpan.textContent = cpuScore;
 }
