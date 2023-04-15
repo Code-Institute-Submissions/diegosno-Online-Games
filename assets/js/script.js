@@ -7,7 +7,7 @@ const userChoiceSpan = document.getElementById("user-choice");
 const cpuChoiceSpan = document.getElementById("cpu-choice");
 
 for (let i = 0; i < options.length; i++) {
-  options[i].addEventListener("click", () => {
+  options[i].addEventListener("click", (event) => {
     const userChoice = event.target.textContent;
     userChoiceSpan.textContent = userChoice;
     const cpuNumber = Math.floor(Math.random() * cpuOptions.length);
@@ -15,3 +15,5 @@ for (let i = 0; i < options.length; i++) {
     cpuChoiceSpan.textContent = cpuChoice;
   });
 }
+
+function endResult(event) {}
