@@ -4,7 +4,9 @@ body {
   font-family: "Padauk", sans-serif;
   background: #f1fcff;
 }
-
+.logo {
+  font-size: 2rem;
+}
 h1 {
   font-family: "Luckiest Guy", cursive, sans-serif;
   display: grid;
@@ -54,8 +56,19 @@ h2 {
   display: flex;
   justify-content: space-around;
 }
+.message-div {
+  display: flex;
+  justify-content: center;
+}
+.restart-div {
+  display: flex;
+  justify-content: center;
+}
 
 @media (max-width: 320px) {
+  .logo {
+    font-size: 1.2rem;
+  }
   h1 {
     font-family: "Luckiest Guy", cursive, sans-serif;
     display: grid;
@@ -83,6 +96,16 @@ h2 {
   }
 
   .scores {
+    font-size: 0.8rem;
+  }
+  .message-div {
+    display: flex;
+    justify-content: center;
+    font-size: 0.8rem;
+  }
+  .restart-div {
+    display: flex;
+    justify-content: center;
     font-size: 0.8rem;
   }
 }
