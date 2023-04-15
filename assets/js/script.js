@@ -18,6 +18,9 @@ function checkResult() {
   const userChoice = userChoiceSpan.textContent.toLowerCase();
   const cpuChoice = cpuChoiceSpan.textContent.toLowerCase();
   if (userChoice === cpuChoice) {
-    return "Draw!";
+    return "Draw!";}
+    else if (cpuChoice === "rock"){
+      return (userChoice === 'paper')? "YAY! YOU WIN" : "AW! TRY AGAIN"
+  }
   }
 }
