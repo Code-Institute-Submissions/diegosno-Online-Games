@@ -14,4 +14,6 @@ for (let i = 0; i < options.length; i++) {
   });
 }
 
-function checkResult() {}
+function checkResult() {
+  const userChoice = userChoiceSpan.textContent.toLowerCase();
+}
