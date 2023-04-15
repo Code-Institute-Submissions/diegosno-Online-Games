@@ -54,4 +54,7 @@ function addPoints(result) {
   }
 }
 
-function resetGame() {}
+function resetGame() {
+  userScore = 0;
+  cpuScore = 0;
+}
