@@ -25,13 +25,13 @@ function checkResult() {
   const userChoice = userChoiceSpan.textContent.toLowerCase();
   const cpuChoice = cpuChoiceSpan.textContent.toLowerCase();
   if (userChoice === cpuChoice) {
-    return "Draw!";
+    return "DRAW!";
   } else if (cpuChoice === "rock") {
-    return userChoice === "paper" ? "YAY! YOU WIN" : "AW! TRY AGAIN";
+    return userChoice === "paper" ? "YAY!" : "NAW!";
   } else if (cpuChoice === "paper") {
-    return userChoice === "scissors" ? "YAY! YOU WIN" : "AW! TRY AGAIN";
+    return userChoice === "scissors" ? "YAY!" : "NAW!";
   } else if (cpuChoice === "scissors") {
-    return userChoice === "rock" ? "YAY! YOU WIN" : "AW! TRY AGAIN";
+    return userChoice === "rock" ? "YAY!" : "NAW!";
   }
 }
 
@@ -40,7 +40,7 @@ function addPoints(result) {
     case result.startsWith("YAY!"):
       userScore++;
       break;
-    case result.startsWith("AW!"):
+    case result.startsWith("NAW!"):
       cpuScore++;
       break;
     default:
