@@ -14,9 +14,8 @@ for (let i = 0; i < options.length; i++) {
   });
 }
 
-const checkResult = (userChoice, cpuChoice);
-=> { if (userChoice === cpuChoice) {
-  return 'Draw!';
+const checkResult = (userChoice, cpuChoice) => {
+  if (userChoice === cpuChoice) {
+    resultSpan.textContent = "Draw!";
   }
-}
-
+};
