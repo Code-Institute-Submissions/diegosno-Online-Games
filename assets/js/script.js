@@ -67,3 +67,6 @@ function restart() {
   userChoiceSpan.textContent = "";
   cpuChoiceSpan.textContent = "";
 }
+
+const restartButton = document.getElementById("restart");
+restartButton.addEventListener("click", restart);
