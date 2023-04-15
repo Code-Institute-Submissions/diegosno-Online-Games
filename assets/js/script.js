@@ -45,4 +45,5 @@ function addPoints(result) {
     default:
       break;
   }
+  userScoreSpan.textContent = userScore;
 }
