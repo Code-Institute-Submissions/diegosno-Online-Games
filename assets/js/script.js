@@ -46,4 +46,5 @@ function addPoints(result) {
       break;
   }
   userScoreSpan.textContent = userScore;
+  cpuScoreSpan.textContent = cpuScore;
 }
