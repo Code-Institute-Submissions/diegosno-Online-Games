@@ -42,5 +42,7 @@ function addPoints(result) {
     case result.startsWith("AW!"):
       cpuScore++;
       break;
+    default:
+      break;
   }
 }
