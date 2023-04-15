@@ -51,6 +51,11 @@ function addPoints(result) {
 
   if (userScore === 5 || cpuScore === 5) {
     resetGame();
+    if (userScore > cpuScore) {
+      message.textContent = "Congratulations! You won!";
+    } else {
+      message.textContent = "Sorry, you lost. Better luck next time!";
+    }
   }
 }
 
