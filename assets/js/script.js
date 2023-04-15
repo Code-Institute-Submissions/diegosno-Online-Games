@@ -1,6 +1,8 @@
+
+
 document.addEventListener("DOMContentLoaded", function () {
-let userScore = 0;
-let cpuScore = 0;
+
+
 const cpuOptions = ["rock", "paper", "scissors"];
 const options = document.getElementsByClassName("button");
 const userChoiceSpan = document.getElementById("user-choice");
@@ -16,5 +18,12 @@ for (let i = 0; i < options.length; i++) {
     cpuChoiceSpan.textContent = cpuChoice;
   });
 }
+
+
+function checkResult() {
+ 
+
+}
+
 
 
