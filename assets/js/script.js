@@ -4,6 +4,7 @@ const userChoiceSpan = document.getElementById("user-choice");
 const cpuChoiceSpan = document.getElementById("cpu-choice");
 const resultSpan = document.getElementById("result");
 const userScoreSpan = document.getElementById("user-score");
+const cpuScoreSpan = document.getElementById("cpu-score");
 
 for (let i = 0; i < options.length; i++) {
   options[i].addEventListener("click", (event) => {
