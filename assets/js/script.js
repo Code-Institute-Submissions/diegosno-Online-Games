@@ -34,4 +34,7 @@ function checkResult() {
   }
 }
 
-function addPoints() {}
+function addPoints(result) {
+  switch (true) {
+  }
+}
