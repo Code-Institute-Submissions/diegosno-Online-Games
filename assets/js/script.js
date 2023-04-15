@@ -17,6 +17,7 @@ for (let i = 0; i < options.length; i++) {
     cpuChoiceSpan.textContent = cpuChoice;
     const result = checkResult();
     resultSpan.textContent = result;
+    addPoints(result);
   });
 }
 
