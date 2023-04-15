@@ -5,6 +5,7 @@ const cpuChoiceSpan = document.getElementById("cpu-choice");
 const resultSpan = document.getElementById("result");
 const userScoreSpan = document.getElementById("user-score");
 const cpuScoreSpan = document.getElementById("cpu-score");
+let userScore = 0;
 
 for (let i = 0; i < options.length; i++) {
   options[i].addEventListener("click", (event) => {
@@ -31,3 +32,5 @@ function checkResult() {
     return userChoice === "rock" ? "YAY! YOU WIN" : "AW! TRY AGAIN";
   }
 }
+
+function addPoints() {}
