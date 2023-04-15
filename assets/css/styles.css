@@ -57,14 +57,29 @@ h2 {
   font-size: 1rem;
 }
 
-#result {
-  color: #666;
-  padding: 10px;
-}
 .scores {
   display: flex;
   justify-content: space-around;
 }
+.results p {
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+}
+.results span {
+  justify-content: center;
+  color: #666666;
+}
+.user-choice {
+  display: block;
+  margin: 0;
+}
+
+.user-choice span {
+  display: block;
+  margin: 0;
+}
+
 @media (max-width: 320px) {
   h1 {
     font-family: "Luckiest Guy", cursive, sans-serif;
