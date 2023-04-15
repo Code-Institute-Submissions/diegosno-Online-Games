@@ -57,4 +57,6 @@ function addPoints(result) {
 function resetGame() {
   userScore = 0;
   cpuScore = 0;
+  userScoreSpan.textContent = userScore;
+  cpuScoreSpan.textContent = cpuScore;
 }
