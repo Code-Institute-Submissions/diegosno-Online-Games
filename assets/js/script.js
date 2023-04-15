@@ -1,10 +1,11 @@
+document.addEventListener("DOMContentLoaded", function () {
 let userScore = 0;
 let cpuScore = 0;
-
 const cpuOptions = ["rock", "paper", "scissors"];
 const options = document.getElementsByClassName("button");
 const userChoiceSpan = document.getElementById("user-choice");
 const cpuChoiceSpan = document.getElementById("cpu-choice");
+
 
 for (let i = 0; i < options.length; i++) {
   options[i].addEventListener("click", (event) => {
@@ -16,4 +17,4 @@ for (let i = 0; i < options.length; i++) {
   });
 }
 
-function endResult(event) {}
+
