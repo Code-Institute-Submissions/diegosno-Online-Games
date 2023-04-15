@@ -52,4 +52,6 @@ function addPoints(result) {
   if (userScore === 5) {
     const popup = document.getElementById("popup");
     const popupText = document.getElementById("popup-text");
+    popupText.textContent = "YOU WON!";
+    popup.style.display = "block";
 }
