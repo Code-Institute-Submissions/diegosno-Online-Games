@@ -19,6 +19,12 @@ h2 {
   justify-content: space-around;
   font-size: 1rem;
 }
+nav {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  font-size: 1rem;
+}
 
 .play {
   display: grid;
