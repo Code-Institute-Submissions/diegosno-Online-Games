@@ -11,6 +11,10 @@ const popupText = document.getElementById("popup-text");
 let userScore = 0;
 let cpuScore = 0;
 
+overlay.addEventListener("click", () => {
+  // Close the popup here
+});
+
 for (let i = 0; i < options.length; i++) {
   options[i].addEventListener("click", (event) => {
     const userChoice = event.target.textContent;
