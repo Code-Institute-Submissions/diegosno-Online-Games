@@ -41,7 +41,7 @@ h1 {
 h2 {
   display: grid;
   justify-content: space-around;
-  font-size: 1rem;
+  font-size: 1.3rem;
 }
 
 .play {
@@ -142,8 +142,14 @@ footer {
   bottom: 0;
   background-color: #ffffffa2;
   height: 60px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
-
+#copyright {
+  padding: 10px;
+  font-size: 1rem;
+}
 @media (max-width: 450px) {
   .logo {
     font-size: 1.2rem;
@@ -170,7 +176,7 @@ footer {
   }
 
   h2 {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
   section {
     top: 45px;
@@ -231,5 +237,9 @@ footer {
     transform: translate(-50%, -50%);
 
     cursor: pointer;
+  }
+  #copyright {
+    padding: 5px;
+    font-size: 0.8rem;
   }
 }
