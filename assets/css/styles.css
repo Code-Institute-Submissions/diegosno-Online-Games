@@ -109,7 +109,9 @@ h2 {
   justify-content: space-around;
   font-size: 1.5rem;
 }
-
+span {
+  padding-left: 5px;
+}
 .button {
   background: none;
   border: none;
@@ -149,6 +151,7 @@ h2 {
 }
 #popup {
   display: none;
+  box-shadow: 5px 5px 5px 5px #ffffff;
 
   position: absolute;
   top: 0%;
@@ -219,6 +222,7 @@ footer {
 #icons a:hover {
   color: #7f9ca4;
 }
+
 @media (max-width: 400px) {
   .logo {
     font-size: 1.2rem;
@@ -282,6 +286,7 @@ footer {
     left: 5%;
     right: 5%;
     bottom: 50%;
+    box-shadow: 5px 5px 5px 5px #ffffff;
   }
   #popup-text {
     font-size: 1rem;
