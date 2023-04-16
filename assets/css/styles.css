@@ -4,16 +4,23 @@ body {
   font-family: "Padauk", sans-serif;
   background: #f1fcff;
 }
-
+header {
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
 .logo {
   font-size: 2rem;
-
+  position: relative;
+  left: 10px;
   padding: 10px;
 }
 
 nav {
   position: absolute;
-  top: 10px;
+  top: 7px;
   right: 10px;
   font-size: 1.5rem;
   padding: 10px;
@@ -67,7 +74,13 @@ h2 {
 .scores {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
+
+.scores p {
+  margin: 0;
+}
+
 .message-div {
   display: flex;
   justify-content: center;
@@ -111,15 +124,25 @@ h2 {
   cursor: pointer;
 }
 
+#restart:hover {
+  background-color: #f1fcff;
+}
+
 @media (max-width: 450px) {
   .logo {
     font-size: 1.2rem;
-    padding: 10px;
+    padding: 5px;
   }
-
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+  }
   nav {
-    top: 30px;
-    padding: 10px;
+    top: 20px;
+    padding: 5px;
     left: 0;
     font-size: 1rem;
   }
