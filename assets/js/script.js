@@ -54,7 +54,7 @@ function addPoints(result) {
   if (userScore === 5 || cpuScore === 5) {
     popup.style.display = "block";
     popupText.textContent =
-      userScore === 5 ? "You won the game!" : "CPU won the game!";
+      userScore === 5 ? "YOU WON!" : "CPU WON, TRY AGAIN!";
   }
 }
 
