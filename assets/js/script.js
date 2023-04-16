@@ -1,4 +1,4 @@
-const cpuOptions = ["rock", "paper", "scissors"];
+const cpuOptions = ["🪨", "🧻", "✂️"];
 const options = document.getElementsByClassName("button");
 const userChoiceSpan = document.getElementById("user-choice");
 const cpuChoiceSpan = document.getElementById("cpu-choice");
@@ -28,12 +28,12 @@ function checkResult() {
   const cpuChoice = cpuChoiceSpan.textContent.toLowerCase();
   if (userChoice === cpuChoice) {
     return "DRAW!";
-  } else if (cpuChoice === "rock") {
-    return userChoice === "paper" ? "YAY!" : "NAW!";
-  } else if (cpuChoice === "paper") {
-    return userChoice === "scissors" ? "YAY!" : "NAW!";
-  } else if (cpuChoice === "scissors") {
-    return userChoice === "rock" ? "YAY!" : "NAW!";
+  } else if (cpuChoice === "🪨") {
+    return userChoice === "🧻" ? "YAY!" : "NAW!";
+  } else if (cpuChoice === "🧻") {
+    return userChoice === "✂️" ? "YAY!" : "NAW!";
+  } else if (cpuChoice === "✂️") {
+    return userChoice === "🪨" ? "YAY!" : "NAW!";
   }
 }
 
