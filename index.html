@@ -17,49 +17,61 @@
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body>
-    
     <header>
-      <div class="logo">Online Games <nav> 
-        <a>Home</a>
-        <a>Games</a>
-        <a>Contact</a>
-      </nav> </div>
+      <div class="logo">
+        Online Games
+        <nav>
+          <a>Home</a>
+          <a>Games</a>
+          <a>Contact</a>
+        </nav>
+      </div>
     </header>
     <h1>ROCK, PAPER, SCISSORS</h1>
     <section>
-  
-    <h2 class="display-text">Make a choice!</h2>
-  
-    <div class="play">
-      <button class="button">🪨</button>
-      <button class="button">🧻</button>
-      <button class="button">✂️</button>
-    </div>
+      <h2 class="display-text">Make a choice!</h2>
 
-    <div class="results">
-      <p>USER<br /><span id="user-choice"></span></p>
-      <p>CPU<br /><span id="cpu-choice"></span></p>
-      <p>Result<br /><span id="result"></span></p>
-    </div>
-    <h2 class=>Score</h2>
-    <div class="scores">
-      <p>USER <span id="user-score">0</span></p>
-      <p>CPU <span id="cpu-score">0</span></p>
-    </div>
-  
-    <div id="popup">
-      <p id="popup-text"></p>
-      <button id="restart">restart</button>
-    </div>
-  
-  </section>
+      <div class="play">
+        <button class="button">🪨</button>
+        <button class="button">🧻</button>
+        <button class="button">✂️</button>
+      </div>
+      <span id="result"></span>
+      <div class="results">
+        <p>Your Choice:<span id="user-choice"></span></p>
+        <p>CPU Choice:<span id="cpu-choice"></span></p>
+      </div>
+
+      <h2>Scoreboard</h2>
+      <div class="scores">
+        <p>USER:<span id="user-score"></span></p>
+        <p>CPU:<span id="cpu-score"></span></p>
+      </div>
+
+      <div id="popup">
+        <p id="popup-text"></p>
+        <button id="restart">Restart</button>
+      </div>
+    </section>
     <footer>
- 
-<div id="icons"> <a href="https://github.com/diegosno" target="_blank" rel="noopener" aria-label="Visit my Github (opens in a new tab)"> <i class="fa-brands fa-github"> </i></a> Copyright © 2023</div>
+      <div id="icons">
+        <a
+          href="https://github.com/diegosno"
+          target="_blank"
+          rel="noopener"
+          aria-label="Visit my Github (opens in a new tab)"
+        >
+          <i class="fa-brands fa-github"> </i
+        ></a>
+        Copyright © 2023
+      </div>
     </footer>
     <script src="assets/js/script.js"></script>
-       <!-- font awesome script -->
-       <script src="https://kit.fontawesome.com/f7e0ecf092.js" crossorigin="anonymous"></script>
+    <!-- font awesome script -->
+    <script
+      src="https://kit.fontawesome.com/f7e0ecf092.js"
+      crossorigin="anonymous"
+    ></script>
     <noscript>Your browser does not support JavaScript!</noscript>
   </body>
 </html>
