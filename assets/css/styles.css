@@ -6,13 +6,13 @@ body {
   background-image: url();
 }
 header {
-  background-color: #ffffff;
+  background: linear-gradient(to bottom, #24295231, #f1fcff00);
 
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  height: 60px;
+  height: 120px;
   font-family: "Anton", sans-serif;
   z-index: 0;
 }
@@ -22,10 +22,10 @@ header a {
   text-decoration: none;
 }
 header a:hover {
-  color: #7f9ca4;
+  color: #6e7284;
 }
 nav a:hover {
-  color: #7f9ca4;
+  color: #6e7284;
   text-transform: uppercase;
   transition: all 0.1s ease-in-out;
 
@@ -149,6 +149,17 @@ span {
   display: flex;
   justify-content: center;
 }
+#overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(210, 210, 210, 0.219);
+  opacity: 0.1;
+  z-index: 9999;
+}
 #popup {
   display: none;
   box-shadow: 5px 5px 5px 5px #ffffff;
@@ -161,7 +172,7 @@ span {
 
   background-color: #ffffff;
   text-align: center;
-  z-index: 2;
+  z-index: 10000;
 }
 
 #popup-text {
@@ -188,30 +199,54 @@ span {
 }
 
 #restart:hover {
-  color: #7f9ca4;
+  color: #6e7284;
   text-transform: uppercase;
   transition: all 0.1s ease-in-out;
 }
 
 footer {
-  height: 50px;
+  height: 100px;
   position: fixed;
   width: 100%;
   left: 0;
   bottom: 0;
   background-color: #ffffffa2;
-  height: 60px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   font-family: "Anton", sans-serif;
   z-index: 0;
+
+  background: linear-gradient(to top, #ffffff00, #f1fcff),
+    linear-gradient(
+      90deg,
+      #f3fbff 0%,
+      #ecf9ff 5%,
+      #def4fe 10%,
+      #c5ecff 15%,
+      #e2f5fe 20%,
+      #ebf8ff 25%,
+      #f6fcff 30%,
+      #fcc5ff60 35%,
+      #c5ceff60 40%,
+      #c5edff60 45%,
+      #c5fffe60 50%,
+      #c5ffd060 55%,
+      #c5fcff60 60%,
+      #c5ffdb60 65%,
+      #fcffc560 70%,
+      #ffe7c560 75%,
+      #ffc5c560 80%,
+      #ffc5c560 85%,
+      #ecfbff 95%,
+      #f3fdff 100%
+    );
 }
 
 #icons {
   font-size: 1rem;
   position: absolute;
-
+  bottom: 10px;
   left: 10px;
 }
 
@@ -220,7 +255,7 @@ footer {
   color: #535353;
 }
 #icons a:hover {
-  color: #7f9ca4;
+  color: #6e7284;
 }
 
 @media (max-width: 400px) {
@@ -233,7 +268,7 @@ footer {
     top: 0;
     left: 0;
     right: 0;
-    height: 50px;
+    height: 100px;
     text-align: center;
   }
   nav {
@@ -312,12 +347,10 @@ footer {
     cursor: pointer;
   }
   footer {
-    height: 50px;
+    height: 60px;
   }
   #icons {
     font-size: 0.8rem;
     position: absolute;
-
-    right: 10px;
   }
 }
