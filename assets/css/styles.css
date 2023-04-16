@@ -76,7 +76,42 @@ h2 {
   display: flex;
   justify-content: center;
 }
+#popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #b1b1b180;
+  text-align: center;
+}
 
+#popup-text {
+  font-size: 2rem;
+  color: #535353;
+  background-color: #ffffff;
+
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+#restart {
+  padding: 10px 10px;
+  background-color: #ffffff;
+  color: #4e4e4e;
+  font-size: 1.5rem;
+  border: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  cursor: pointer;
+}
+#restart:hover {
+}
 @media (max-width: 450px) {
   .logo {
     font-size: 1.2rem;
