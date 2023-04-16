@@ -110,8 +110,7 @@ h2 {
 
   cursor: pointer;
 }
-#restart:hover {
-}
+
 @media (max-width: 450px) {
   .logo {
     font-size: 1.2rem;
@@ -166,4 +165,28 @@ h2 {
   #restart-button {
     font-size: 0.5rem;
   }
+}
+
+#popup-text {
+  font-size: 1rem;
+  color: #535353;
+  background-color: #ffffff;
+
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+#restart {
+  padding: 10px 10px;
+  background-color: #ffffff;
+  color: #4e4e4e;
+  font-size: 0.7rem;
+  border: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  cursor: pointer;
 }
