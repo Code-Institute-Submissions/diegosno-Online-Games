@@ -23,6 +23,8 @@ header a {
 }
 header a:hover {
   color: #6e7284;
+  text-transform: uppercase;
+  transition: all 0.1s ease-in-out;
 }
 nav a:hover {
   color: #6e7284;
@@ -150,6 +152,7 @@ span {
   justify-content: center;
 }
 #overlay {
+  pointer-events: none;
   display: none;
   position: fixed;
   top: 0;
@@ -162,7 +165,6 @@ span {
 }
 #popup {
   display: none;
-  box-shadow: 5px 5px 5px 5px #ffffff;
 
   position: absolute;
   top: 0%;
@@ -170,7 +172,7 @@ span {
   right: 10%;
   bottom: 40%;
 
-  background-color: #ffffff;
+  background: #f1fcff;
   text-align: center;
   z-index: 10000;
 }
@@ -178,7 +180,7 @@ span {
 #popup-text {
   font-size: 2rem;
   color: #535353;
-  background-color: #ffffff;
+  background: #f1fcff;
   padding: 50px;
   box-sizing: border-box;
   margin: 0;
@@ -186,7 +188,7 @@ span {
 
 #restart {
   padding: 10px 10px;
-  background-color: #ffffff;
+  background: #f1fcff;
   color: #535353;
   font-size: 1.5rem;
   border: none;
@@ -321,12 +323,10 @@ footer {
     left: 5%;
     right: 5%;
     bottom: 50%;
-    box-shadow: 5px 5px 5px 5px #ffffff;
   }
   #popup-text {
     font-size: 1rem;
     color: #535353;
-    background-color: #ffffff;
 
     padding: 50px;
     box-sizing: border-box;
@@ -335,7 +335,7 @@ footer {
 
   #restart {
     padding: 10px 10px;
-    background-color: #ffffff;
+
     color: #4e4e4e;
     font-family: "Russo One", sans-serif;
     font-size: 0.7rem;
