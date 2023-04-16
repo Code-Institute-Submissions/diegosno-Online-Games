@@ -15,6 +15,21 @@ header {
   font-family: "Anton", sans-serif;
   z-index: 0;
 }
+header a {
+  color: #535353;
+
+  text-decoration: none;
+}
+header a:hover {
+  color: #7f9ca4;
+}
+nav a:hover {
+  color: #7f9ca4;
+  text-transform: uppercase;
+  transition: all 0.1s ease-in-out;
+
+  text-decoration: none;
+}
 section {
   position: absolute;
   top: 20%;
@@ -203,7 +218,7 @@ footer {
 #icons a:hover {
   color: #7f9ca4;
 }
-@media (max-width: 410px) {
+@media (max-width: 400px) {
   .logo {
     font-size: 1.2rem;
     padding: 5px;
@@ -214,6 +229,7 @@ footer {
     left: 0;
     right: 0;
     height: 50px;
+    text-align: center;
   }
   nav {
     top: 20px;
@@ -225,7 +241,7 @@ footer {
     font-family: "Press Start 2P", cursive;
     display: grid;
     justify-content: space-around;
-    font-size: 1.2rem;
+    font-size: 1rem;
     top: 50px;
   }
 
