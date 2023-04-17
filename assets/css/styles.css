@@ -14,7 +14,7 @@ header {
   right: 0;
   height: 120px;
   font-family: "Anton", sans-serif;
-  z-index: 0;
+  z-index: 999;
 }
 
 h1 {
@@ -157,15 +157,16 @@ span {
 }
 
 #popup {
-  display: ;
+  display: none;
   position: absolute;
-  top: 5%;
+  float: inline-start;
+  top: -270px;
   left: 10%;
   right: 10%;
-  bottom: 30%;
+
   background: #f1fcff;
   text-align: center;
-  z-index: 10000;
+  z-index: 998;
 }
 
 #overlay {
@@ -184,10 +185,11 @@ span {
 #popup-two {
   display: none;
   position: absolute;
-  top: 18%;
+  top: 30%;
   left: 10%;
   right: 10%;
   bottom: 30%;
+  height: 500px;
 
   background: #f1fcff;
   text-align: center;
@@ -240,13 +242,13 @@ footer {
   background: linear-gradient(to top, #ffffff00, #f1fcff),
     linear-gradient(
       90deg,
-      #f3fbff 0%,
-      #ecf9ff 5%,
-      #def4fe 10%,
-      #c5ecff 15%,
-      #e2f5fe 20%,
-      #ebf8ff 25%,
-      #f6fcff 30%,
+      #f3fbff98 0%,
+      #ecf9ff7c 5%,
+      #def4fe6f 10%,
+      #c5ecff81 15%,
+      #e2f5fe89 20%,
+      #ebf8ff7d 25%,
+      #f6fcff79 30%,
       #fcc5ff60 35%,
       #c5ceff60 40%,
       #c5edff60 45%,
@@ -258,8 +260,8 @@ footer {
       #ffe7c560 75%,
       #ffc5c560 80%,
       #ffc5c560 85%,
-      #ecfbff 95%,
-      #f3fdff 100%
+      #ecfbff5d 95%,
+      #f3fdff6d 100%
     );
 }
 
@@ -286,8 +288,50 @@ footer {
     font-size: 2rem;
     top: 2%;
   }
+  #start {
+    display: inline-block;
+    font-size: 0.8rem;
+    font-family: "Russo One", sans-serif;
+    padding: 10px;
+    color: #535353;
+    position: relative;
+    border: none;
+    cursor: pointer;
+  }
+
+  #later {
+    display: inline-block;
+    font-size: 0.8rem;
+    font-family: "Russo One", sans-serif;
+    padding: 10px;
+    position: relative;
+    color: #535353;
+    cursor: pointer;
+  }
+  #popup {
+    display: none;
+    position: absolute;
+    float: inline-start;
+    top: -240px;
+    left: 5%;
+    right: 5%;
+
+    background: #f1fcff;
+    text-align: center;
+    z-index: 998;
+  }
+  #popup-two {
+    display: none;
+    position: absolute;
+    height: 500px;
+    top: 30%;
+    left: 5%;
+    right: 5%;
+    bottom: 50%;
+  }
 }
-@media (max-width: 400px) {
+
+@media (max-width: 350px) {
   header {
     position: fixed;
     top: 0;
@@ -295,6 +339,7 @@ footer {
     right: 0;
     height: 100px;
     text-align: center;
+    z-index: 999;
   }
 
   h1 {
@@ -304,32 +349,50 @@ footer {
     font-size: 1.3rem;
     top: 3%;
   }
+  h2 {
+    padding: 20px;
+    font-size: 1rem;
+    text-align: center;
+  }
 
   .rules {
+    padding: 20px;
     font-size: 0.8rem;
     display: block;
     text-align: center;
     position: relative;
   }
-  #letsgo {
+  #start {
     display: inline-block;
     font-size: 0.8rem;
     font-family: "Russo One", sans-serif;
-    padding: 5px;
+    padding: 10px;
     color: #535353;
     position: relative;
     border: none;
     cursor: pointer;
   }
 
-  #notsure {
+  #later {
     display: inline-block;
     font-size: 0.8rem;
     font-family: "Russo One", sans-serif;
-    padding: 5px;
+    padding: 10px;
     position: relative;
     color: #535353;
     cursor: pointer;
+  }
+  #popup {
+    display: none;
+    position: absolute;
+    float: inline-start;
+    top: -270px;
+    left: 5%;
+    right: 5%;
+    height: 540px;
+    background: #f1fcff;
+    text-align: center;
+    z-index: 998;
   }
   .make-a-choice {
     display: grid;
@@ -341,11 +404,6 @@ footer {
     display: grid;
     justify-content: center;
     font-size: 1rem;
-  }
-
-  h2 {
-    font-size: 1rem;
-    text-align: center;
   }
 
   .button {
@@ -369,8 +427,10 @@ footer {
   }
 
   #popup-two {
+    display: none;
     position: absolute;
-    top: 15%;
+    height: 500px;
+    top: 30%;
     left: 5%;
     right: 5%;
     bottom: 50%;
@@ -378,21 +438,22 @@ footer {
   #popup-text {
     font-size: 1rem;
     color: #535353;
-
-    padding: 50px;
+    padding: 10px;
     box-sizing: border-box;
     margin: 0;
   }
 
   #restart {
-    padding: 10px 10px;
+    padding: 10px;
+
+    position: relative;
 
     color: #4e4e4e;
     font-family: "Russo One", sans-serif;
-    font-size: 0.7rem;
+    font-size: 1rem;
     border: none;
     position: fixed;
-    top: 30%;
+    top: 40%;
     left: 50%;
 
     cursor: pointer;
