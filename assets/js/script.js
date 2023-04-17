@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const resultSpan = document.getElementById("result");
   const userScoreSpan = document.getElementById("user-score");
   const cpuScoreSpan = document.getElementById("cpu-score");
-  const popupTwo = document.getElementById("popup-two");
+  const popUp = document.getElementById("popup");
   const overlay = document.getElementById("overlay");
   const popupText = document.getElementById("popup-text");
   let userScore = 0;
@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
     cpuScoreSpan.textContent = cpuScore;
 
     if (userScore === 5 || cpuScore === 5) {
-      popupTwo.style.display = "block";
+      popUp.style.display = "block";
       overlay.style.display = "block";
       popupText.textContent =
         userScore === 5 ? "YOU WON!" : "CPU WON, TRY AGAIN!";
@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
     resultSpan.textContent = "";
     userChoiceSpan.textContent = "";
     cpuChoiceSpan.textContent = "";
-    popupTwo.style.display = "none";
+    popUp.style.display = "none";
     overlay.style.display = "none";
   }
 
