@@ -19,6 +19,10 @@ form.addEventListener('submit', function(event) {
         feedback: feedbackData.value,
     };
 
-    
+
  emailjs.send(serviceId, templateId, inputText)
         .then(() => {
+submitForm.innerText = 'Message sent!';
+            nameData.value='';
+            emailData.value='';
+            feedbackData.value='';
