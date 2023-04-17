@@ -23,19 +23,29 @@ h1 {
   justify-content: center;
   align-items: center;
   text-align: center;
-  top: 5%;
   left: 0;
   right: 0;
-  font-size: 2.5rem;
+  font-size: 2rem;
   padding: 30px;
 }
 
+h1 a:hover {
+  color: #6e7284;
+  cursor: pointer;
+}
 h2 {
   display: flex;
   justify-content: center;
   font-size: 1.5rem;
 }
-
+a {
+  text-decoration: none;
+  color: #535353;
+}
+a:hover {
+  cursor: pointer;
+  color: #6e7284;
+}
 .rules {
   display: block;
   text-align: center;
@@ -51,42 +61,16 @@ h2 {
   cursor: pointer;
 }
 
-#later {
-  font-family: "Russo One", sans-serif;
-  padding: 10px 10px;
-  background: #f1fcff;
-  color: #535353;
-  font-size: 1rem;
-  border: none;
-  cursor: pointer;
-}
 #start:hover {
   color: #6e7284;
   text-transform: uppercase;
   transition: all 0.1s ease-in-out;
 }
-#later:hover {
-  color: #6e7284;
-  text-transform: uppercase;
-  transition: all 0.1s ease-in-out;
-}
-
-#game {
-  background-color: #f1fcff;
-}
 
 .make-a-choice {
-  display: grid;
   justify-content: center;
   font-size: 1.5rem;
 }
-
-.scoreboard {
-  display: grid;
-  justify-content: center;
-  font-size: 1.5rem;
-}
-
 .play {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -95,14 +79,30 @@ h2 {
   grid-row-gap: 0px;
   justify-content: space-around;
 }
-.result {
-  display: flex;
+.button {
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 3rem;
+  cursor: pointer;
+  width: 100%;
+}
 
-  justify-content: space-around;
+.button:hover {
+  transform: scale(1.3);
+  transition: all 0.1s ease-in-out;
+}
+.result {
+  justify-content: center;
 }
 .results {
   display: block;
   text-align: center;
+}
+
+.scoreboard {
+  justify-content: center;
+  font-size: 1.5rem;
 }
 
 #user-choice {
@@ -126,19 +126,6 @@ h2 {
 span {
   padding-left: 5px;
 }
-.button {
-  background: none;
-  border: none;
-  outline: none;
-  font-size: 3rem;
-  cursor: pointer;
-  width: 100%;
-}
-
-.button:hover {
-  transform: scale(1.3);
-  transition: all 0.1s ease-in-out;
-}
 
 .scores {
   display: block;
@@ -154,19 +141,6 @@ span {
   justify-content: center;
   text-align: center;
   position: absolute;
-}
-
-#popup {
-  display: none;
-  position: absolute;
-  float: inline-start;
-  top: -270px;
-  left: 10%;
-  right: 10%;
-
-  background: #f1fcff;
-  text-align: center;
-  z-index: 998;
 }
 
 #overlay {
@@ -185,12 +159,11 @@ span {
 #popup-two {
   display: none;
   position: absolute;
-  top: 30%;
+  top: 15%;
   left: 10%;
   right: 10%;
   bottom: 30%;
   height: 500px;
-
   background: #f1fcff;
   text-align: center;
   z-index: 10000;
@@ -270,7 +243,7 @@ footer {
   position: absolute;
   bottom: 10px;
   left: 10px;
-  padding: 5px;
+  align-items: center;
 }
 
 #icons a {
@@ -280,79 +253,82 @@ footer {
 #icons a:hover {
   color: #6e7284;
 }
-@media (max-width: 540px) {
+@media (max-width: 750px) {
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 110px;
+    z-index: 999;
+  }
   h1 {
     font-family: "Press Start 2P", cursive;
-    display: grid;
-    justify-content: space-around;
-    font-size: 2rem;
-    top: 2%;
-  }
-  #start {
-    display: inline-block;
-    font-size: 0.8rem;
-    font-family: "Russo One", sans-serif;
-    padding: 10px;
-    color: #535353;
-    position: relative;
-    border: none;
-    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    padding: 30px;
   }
 
-  #later {
-    display: inline-block;
-    font-size: 0.8rem;
-    font-family: "Russo One", sans-serif;
-    padding: 10px;
-    position: relative;
-    color: #535353;
-    cursor: pointer;
-  }
-  #popup {
-    display: none;
-    position: absolute;
-    float: inline-start;
-    top: -240px;
-    left: 5%;
-    right: 5%;
-
-    background: #f1fcff;
+  h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
     text-align: center;
-    z-index: 998;
+  }
+  .scoreboard {
+    display: grid;
+    justify-content: center;
+    font-size: 1.2rem;
   }
   #popup-two {
     display: none;
     position: absolute;
-    height: 500px;
+    height: 350px;
+    top: 14%;
+  }
+
+  #popup-text {
+    font-size: 1.2rem;
+    color: #535353;
+    padding: 0px;
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+  #restart {
+    font-size: 1.2rem;
+    color: #4e4e4e;
+    font-family: "Russo One", sans-serif;
     top: 30%;
-    left: 5%;
-    right: 5%;
-    bottom: 50%;
+    cursor: pointer;
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 370px) {
   header {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     height: 100px;
-    text-align: center;
     z-index: 999;
   }
 
   h1 {
     font-family: "Press Start 2P", cursive;
-    display: grid;
-    justify-content: space-around;
-    font-size: 1.3rem;
-    top: 3%;
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    padding: 30px;
   }
+
   h2 {
-    padding: 20px;
     font-size: 1rem;
     text-align: center;
+    display: flex;
+    justify-content: center;
   }
 
   .rules {
@@ -382,43 +358,22 @@ footer {
     color: #535353;
     cursor: pointer;
   }
-  #popup {
-    display: none;
-    position: absolute;
-    float: inline-start;
-    top: -270px;
-    left: 5%;
-    right: 5%;
-    height: 540px;
-    background: #f1fcff;
-    text-align: center;
-    z-index: 998;
+
+  .button {
+    font-size: 1.5rem;
+    cursor: pointer;
   }
-  .make-a-choice {
-    display: grid;
-    justify-content: center;
+  #result {
     font-size: 1rem;
+  }
+
+  .results {
+    font-size: 0.8rem;
   }
 
   .scoreboard {
     display: grid;
     justify-content: center;
-    font-size: 1rem;
-  }
-
-  .button {
-    background: none;
-    border: none;
-    outline: none;
-    font-size: 1.5rem;
-    cursor: pointer;
-
-    width: 100%;
-  }
-  .results {
-    font-size: 0.8rem;
-  }
-  #result {
     font-size: 1rem;
   }
 
@@ -429,40 +384,35 @@ footer {
   #popup-two {
     display: none;
     position: absolute;
-    height: 500px;
-    top: 30%;
-    left: 5%;
-    right: 5%;
-    bottom: 50%;
+    height: 350px;
+    top: 14%;
   }
+
   #popup-text {
     font-size: 1rem;
     color: #535353;
-    padding: 10px;
+    padding: 0px;
     box-sizing: border-box;
     margin: 0;
   }
 
   #restart {
-    padding: 10px;
-
-    position: relative;
-
+    font-size: 1rem;
     color: #4e4e4e;
     font-family: "Russo One", sans-serif;
-    font-size: 1rem;
-    border: none;
-    position: fixed;
-    top: 40%;
-    left: 50%;
 
+    top: 30%;
     cursor: pointer;
   }
+
   footer {
     height: 60px;
   }
+
   #icons {
-    padding: 5px;
+    bottom: 5px;
+    left: 5px;
+    align-items: center;
     font-size: 0.5rem;
     position: absolute;
   }
