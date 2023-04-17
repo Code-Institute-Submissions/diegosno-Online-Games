@@ -25,7 +25,18 @@
       </nav>
     </header>
     <h1>YOUR OPINION COUNTS!</h1>
+    <form id="form">
+      <label for="name">Name</label>
+      <input id="name" type="text" placeholder="Your name" required /><br />
 
+      <label for="email">Email</label>
+      <input id="email" type="email" placeholder="Your email" required /><br />
+
+      <label for="feeback">Feedback</label>
+      <textarea id="feedback" placeholder="Write a message" required></textarea
+      ><br />
+      <button type="submit" id="submit">Submit</button>
+    </form>
     <footer>
       <div id="icons">
         <a
@@ -39,7 +50,8 @@
         COPYRIGHT © 2023
       </div>
     </footer>
-    <script src="assets/js/script.js"></script>
+    <script src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+    <script src="assets/js/form.js"></script>
     <!-- font awesome script -->
     <script
       src="https://kit.fontawesome.com/f7e0ecf092.js"
