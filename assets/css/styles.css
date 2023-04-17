@@ -219,8 +219,8 @@ span {
   display: none;
   position: absolute;
   top: 25%;
-  left: 10%;
-  right: 10%;
+  left: 0;
+  right: 0%;
   bottom: 30%;
   height: 500px;
   background: #f1fcff;
