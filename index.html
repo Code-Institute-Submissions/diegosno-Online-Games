@@ -30,8 +30,42 @@
         <p>Paper beats rock.</p>
         <p>Choose wisely!</p>
 
-        <button id="letsgo">Let's go!</button>
-        <button id="notsure">Not sure!</button>
+        <button id="start">Start!</button>
+        <button id="later">Later!</button>
+        <div id="popup">
+          <div id="game">
+            <h1>ROCK, PAPER, SCISSORS</h1>
+      
+            <h2 class="make-a-choice">Make a choice!</h2>
+      
+            <div class="play">
+              <button class="button">🪨</button>
+              <button class="button">🧻</button>
+              <button class="button">✂️</button>
+            </div>
+      
+            <span id="result"></span>
+      
+            <div class="results">
+              <p>Your Choice: <span id="user-choice"></span></p>
+              <p>CPU Choice: <span id="cpu-choice"></span></p>
+            </div>
+      
+            <h2 class="scoreboard">Scoreboard</h2>
+      
+            <div class="scores">
+              <p>USER: <span id="user-score"></span></p>
+              <p>CPU: <span id="cpu-score"></span></p>
+            </div>
+      
+            <div id="popup-two">
+              <p id="popup-text"></p>
+              <button id="restart">Restart</button>
+            </div>
+      
+            <div id="overlay"></div>
+          </div>
+        </div>
       </div>
 
     <footer>

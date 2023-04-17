@@ -7,6 +7,7 @@ body {
 }
 header {
   background: linear-gradient(to bottom, #24295231, #f1fcff00);
+  box-sizing: border-box;
   position: fixed;
   top: 0;
   left: 0;
@@ -18,7 +19,6 @@ header {
 
 h1 {
   font-family: "Press Start 2P", cursive;
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -41,7 +41,7 @@ h2 {
   text-align: center;
   position: relative;
 }
-#letsgo {
+#start {
   font-family: "Russo One", sans-serif;
   padding: 10px 10px;
   background: #f1fcff;
@@ -51,7 +51,7 @@ h2 {
   cursor: pointer;
 }
 
-#notsure {
+#later {
   font-family: "Russo One", sans-serif;
   padding: 10px 10px;
   background: #f1fcff;
@@ -60,12 +60,12 @@ h2 {
   border: none;
   cursor: pointer;
 }
-#letsgo:hover {
+#start:hover {
   color: #6e7284;
   text-transform: uppercase;
   transition: all 0.1s ease-in-out;
 }
-#notsure:hover {
+#later:hover {
   color: #6e7284;
   text-transform: uppercase;
   transition: all 0.1s ease-in-out;
@@ -156,14 +156,18 @@ span {
   position: absolute;
 }
 
-.message-div {
-  display: flex;
-  justify-content: center;
+#popup {
+  display: ;
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  right: 10%;
+  bottom: 30%;
+  background: #f1fcff;
+  text-align: center;
+  z-index: 10000;
 }
-.restart-div {
-  display: flex;
-  justify-content: center;
-}
+
 #overlay {
   pointer-events: none;
   display: none;
@@ -176,6 +180,7 @@ span {
   opacity: 0.1;
   z-index: 9999;
 }
+
 #popup-two {
   display: none;
   position: absolute;
