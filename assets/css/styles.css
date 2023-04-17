@@ -41,10 +41,58 @@ h1 {
   font-size: 2rem;
   padding: 90px;
 }
+
 form {
   position: relative;
   box-sizing: border-box;
   text-align: center;
+  align-items: center;
+}
+
+#name {
+  box-sizing: border-box;
+  position: relative;
+  width: 180px;
+  border: 1px #ccc solid;
+  background-color: #ffffff;
+  margin-bottom: 10px;
+}
+
+#email {
+  box-sizing: border-box;
+  position: relative;
+  width: 180px;
+  border: 1px #ccc solid;
+  background-color: #ffffff;
+  margin-bottom: 10px;
+}
+
+#feeback {
+  box-sizing: border-box;
+  position: relative;
+  width: 180px;
+  border: 1px #ccc solid;
+  background-color: #ffffff;
+  margin-bottom: 10px;
+}
+
+#submit {
+  font-size: 1rem;
+  box-sizing: border-box;
+  color: #535353;
+  background-color: none;
+  border: 0px;
+  background: #f1fcff;
+  font-family: "Russo One", sans-serif;
+  padding: 10px;
+}
+
+#submit:hover {
+  text-shadow: #ffffff;
+  color: #6e7284;
+  text-transform: uppercase;
+  transition: all 0.1s ease-in-out;
+  background: #f1fcff;
 }
 
 h2 {
@@ -412,6 +460,23 @@ footer {
     cursor: pointer;
   }
 
+  #form {
+    font-size: 0.7rem;
+  }
+  #name {
+    font-size: 0.6rem;
+  }
+  #email {
+    font-size: 0.7rem;
+  }
+
+  #feedback {
+    font-size: 0.7rem;
+  }
+
+  #submit {
+    font-size: 0.7rem;
+  }
   footer {
     height: 60px;
     width: 100%;
