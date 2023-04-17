@@ -21,6 +21,10 @@ nav {
   right: 10px;
   top: 10px;
 }
+nav a:hover {
+  cursor: pointer;
+  color: #6e7284;
+}
 a {
   text-decoration: none;
   color: #535353;
@@ -67,7 +71,7 @@ form {
   margin-bottom: 10px;
 }
 
-#feeback {
+#feedback {
   box-sizing: border-box;
   position: relative;
   width: 180px;
