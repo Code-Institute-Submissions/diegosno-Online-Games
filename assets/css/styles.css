@@ -21,9 +21,12 @@ nav {
   right: 10px;
   top: 10px;
 }
+
 nav a:hover {
   cursor: pointer;
   color: #6e7284;
+  font-size: 1.8rem;
+  transition: all 0.05s ease-in-out;
 }
 a {
   text-decoration: none;
