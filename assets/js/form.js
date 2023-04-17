@@ -3,3 +3,7 @@ const nameData = document.getElementById("name");
 const emailData = document.getElementById("email");
 const feedbackData = document.getElementById("feedback");
 const submitForm = document.getElementById("submit");
+const publicKey = "keVAYEv_z2E2Ed1Or";
+const serviceId = "service_krm73sn";
+const templateId = "template_4pvzm1f";
+emailjs.init(publicKey);
