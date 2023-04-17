@@ -163,12 +163,12 @@ h2 {
 #user-choice {
   justify-content: center;
   text-align: center;
-  position: absolute;
+  position: relative;
 }
 #cpu-choice {
   justify-content: center;
   text-align: center;
-  position: absolute;
+  position: relative;
 }
 #result {
   display: flex;
