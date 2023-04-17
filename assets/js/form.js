@@ -26,6 +26,9 @@ document.addEventListener("DOMContentLoaded", function () {
         nameData.value = "";
         emailData.value = "";
         feedbackData.value = "";
+        setTimeout(() => {
+          submitForm.innerText = "Submit";
+        }, 5000);
       },
 
       (error) => {
