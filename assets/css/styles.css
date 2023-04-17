@@ -382,6 +382,10 @@ footer {
     right: 5px;
     top: 5px;
   }
+  nav a:hover {
+    font-size: 1.2rem;
+    transition: all 0.1s ease-in-out;
+  }
 
   h1 {
     font-family: "Press Start 2P", cursive;
