@@ -92,6 +92,7 @@ form {
 }
 
 #submit:hover {
+  cursor: pointer;
   text-shadow: #ffffff;
   color: #6e7284;
   text-transform: uppercase;
