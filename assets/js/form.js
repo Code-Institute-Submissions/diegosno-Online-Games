@@ -11,3 +11,4 @@ emailjs.init(publicKey);
 
 form.addEventListener('submit', function(event) {
     event.preventDefault();
+    submitForm.innerText = "Sending..";
