@@ -12,15 +12,6 @@ document.addEventListener("DOMContentLoaded", () => {
   let userScore = 0;
   let cpuScore = 0;
 
-  const start = document.getElementById("start");
-  const popUp = document.getElementById("popup");
-  console.log(start);
-
-  function showPopUp() {
-    popUp.style.display = "block";
-  }
-  start.addEventListener("click", showPopUp);
-
   for (let i = 0; i < options.length; i++) {
     options[i].addEventListener("click", (event) => {
       const userChoice = event.target.textContent;
