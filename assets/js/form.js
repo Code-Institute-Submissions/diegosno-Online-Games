@@ -7,3 +7,7 @@ const publicKey = "keVAYEv_z2E2Ed1Or";
 const serviceId = "service_krm73sn";
 const templateId = "template_4pvzm1f";
 emailjs.init(publicKey);
+
+
+form.addEventListener('submit', function(event) {
+    event.preventDefault();
