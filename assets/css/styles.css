@@ -222,7 +222,7 @@ span {
   left: 0;
   right: 0;
   bottom: 0;
-  height: 500px;
+
   background: #f1fcff;
   text-align: center;
   z-index: 1;
@@ -443,9 +443,8 @@ footer {
   #popup-two {
     display: none;
     position: absolute;
-    height: 350px;
+
     top: 20%;
-    height: 500px;
   }
 
   #popup-text {
