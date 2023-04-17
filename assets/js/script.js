@@ -5,7 +5,7 @@ const cpuChoiceSpan = document.getElementById("cpu-choice");
 const resultSpan = document.getElementById("result");
 const userScoreSpan = document.getElementById("user-score");
 const cpuScoreSpan = document.getElementById("cpu-score");
-const popup = document.getElementById("popup");
+const popupTwo = document.getElementById("popup-two");
 const overlay = document.getElementById("overlay");
 const popupText = document.getElementById("popup-text");
 let userScore = 0;
@@ -57,7 +57,7 @@ function addPoints(result) {
   cpuScoreSpan.textContent = cpuScore;
 
   if (userScore === 5 || cpuScore === 5) {
-    popup.style.display = "block";
+    popupTwo.style.display = "block";
     overlay.style.display = "block";
     popupText.textContent =
       userScore === 5 ? "YOU WON!" : "CPU WON, TRY AGAIN!";
@@ -72,7 +72,7 @@ function restart() {
   resultSpan.textContent = "";
   userChoiceSpan.textContent = "";
   cpuChoiceSpan.textContent = "";
-  popup.style.display = "none";
+  popupTwo.style.display = "none";
   overlay.style.display = "none";
 }
 
