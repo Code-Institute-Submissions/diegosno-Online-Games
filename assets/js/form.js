@@ -12,9 +12,13 @@ emailjs.init(publicKey);
 form.addEventListener('submit', function(event) {
     event.preventDefault();
     submitForm.innerText = "Sending..";
-    
+
     const inputText ={
         name: nameData.value,
         email: emailData.value,
         feedback: feedbackData.value,
     };
+
+    
+ emailjs.send(serviceId, templateId, inputText)
+        .then(() => {
