@@ -12,9 +12,8 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  height: 120px;
+  height: 90px;
   font-family: "Anton", sans-serif;
-  z-index: 999;
 }
 
 h1 {
@@ -26,13 +25,9 @@ h1 {
   left: 0;
   right: 0;
   font-size: 2rem;
-  padding: 30px;
+  padding: 90px;
 }
 
-h1 a:hover {
-  color: #6e7284;
-  cursor: pointer;
-}
 h2 {
   display: flex;
   justify-content: center;
@@ -151,22 +146,21 @@ span {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(210, 210, 210, 0.219);
-  opacity: 0.1;
-  z-index: 9999;
+
+  z-index: 1;
 }
 
 #popup-two {
   display: none;
   position: absolute;
-  top: 15%;
+  top: 25%;
   left: 10%;
   right: 10%;
   bottom: 30%;
   height: 500px;
   background: #f1fcff;
   text-align: center;
-  z-index: 10000;
+  z-index: 1;
 }
 
 #popup-text {
@@ -259,7 +253,7 @@ footer {
     top: 0;
     left: 0;
     right: 0;
-    height: 110px;
+    height: 80px;
     z-index: 999;
   }
   h1 {
@@ -268,7 +262,8 @@ footer {
     display: flex;
     justify-content: center;
     font-size: 1.5rem;
-    padding: 30px;
+
+    padding: 70px;
   }
 
   h2 {
@@ -285,8 +280,8 @@ footer {
   #popup-two {
     display: none;
     position: absolute;
-    height: 350px;
-    top: 14%;
+    height: 400px;
+    top: 20%;
   }
 
   #popup-text {
@@ -312,7 +307,7 @@ footer {
     top: 0;
     left: 0;
     right: 0;
-    height: 100px;
+    height: 70px;
     z-index: 999;
   }
 
@@ -321,7 +316,7 @@ footer {
     display: flex;
     justify-content: center;
     font-size: 1rem;
-    padding: 30px;
+    padding: 60px;
   }
 
   h2 {
@@ -385,7 +380,8 @@ footer {
     display: none;
     position: absolute;
     height: 350px;
-    top: 14%;
+    top: 20%;
+    height: 500px;
   }
 
   #popup-text {
