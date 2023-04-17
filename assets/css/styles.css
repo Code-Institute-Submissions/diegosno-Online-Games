@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Anton&family=Press+Start+2P&family=Russo+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Russo+One&display=swap");
 body {
   color: #535353;
   font-family: "Russo One", sans-serif;
@@ -13,7 +13,13 @@ header {
   left: 0;
   right: 0;
   height: 90px;
-  font-family: "Anton", sans-serif;
+  font-family: "Russo One", sans-serif;
+}
+nav {
+  position: absolute;
+  font-size: 1.5rem;
+  right: 10px;
+  top: 10px;
 }
 
 h1 {
@@ -235,9 +241,10 @@ footer {
 #icons {
   font-size: 0.8rem;
   position: absolute;
-  bottom: 10px;
-  left: 10px;
+
   align-items: center;
+  padding: 10px;
+  bottom: 0;
 }
 
 #icons a {
@@ -406,10 +413,10 @@ footer {
   }
 
   #icons {
-    bottom: 5px;
-    left: 5px;
+    padding: 10px;
+    bottom: 0;
     align-items: center;
-    font-size: 0.5rem;
+    font-size: 0.6rem;
     position: absolute;
   }
 }
