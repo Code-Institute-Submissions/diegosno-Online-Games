@@ -101,7 +101,6 @@ form {
   font-size: 1rem;
   box-sizing: border-box;
   color: #535353;
-  background-color: none;
   border: 0px;
   background: #f1fcff;
   font-family: "Russo One", sans-serif;
@@ -110,7 +109,6 @@ form {
 
 #submit:hover {
   cursor: pointer;
-  text-shadow: #ffffff;
   color: #6e7284;
   text-transform: uppercase;
   transition: all 0.1s ease-in-out;
