@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", function () {
   const cpuOptions = ["🪨", "🧻", "✂️"];
   const options = document.getElementsByClassName("button");
   const userChoiceSpan = document.getElementById("user-choice");
@@ -72,7 +72,6 @@ document.addEventListener("DOMContentLoaded", () => {
     popUp.style.display = "none";
     overlay.style.display = "none";
   }
-
   const restartButton = document.getElementById("restart");
   restartButton.addEventListener("click", restart);
 });
