@@ -66,7 +66,7 @@ And finally a rainbow for the footer to simulate that you are over the rainbow!
 And Russo One for the rest of the elements as it is easy to read. 
  <details> <summary>View body font</summary>
 
-![Header font image](/assets/images/body%20font.png)
+![Body font image](/assets/images/body%20font.png)
 </details>
 
 # Structure and features
@@ -83,7 +83,7 @@ This page contains the game's instructions as well as a start button which is cl
 The page contains the game itself. An h2 is displayed to prompt the user to make a choice, with the options to choose from right beneath. I decided use emojis as the options to catch the user's attention. They are also responsive, and on click they will provide the user with feedback about the game. Right below a message will display "YAY!" when the user wins, "DRAW!" if it is a tie, and NAW! if the CPU wins. The user's and CPU choices will update as well as the scoreboard.
  <details> <summary>View game page</summary>
 
-![Popup message](/assets/images/gamepage.png)
+![Game page](/assets/images/gamepage.png)
 </details>
 
  When the game comes to an end a popup is shown up to let the user know if they won or not and a big button to restart the game. I added the popup because I didn't want the user to be taken outside of the page as this can sometimes be tiresome. The popup contains a restart button which on click resets the game values and closes the popup to allow the user to play again. 
@@ -96,17 +96,22 @@ The page contains the game itself. An h2 is displayed to prompt the user to make
 The feedback page contains a form where the user can provide general feedback, and a submit button which is responsive and provides feedback to the user's request by changing its text from "submit" to "sending.." to "sent".
  <details> <summary>View feedback page</summary>
 
-![Popup message](/assets/images/feedbackpage.png)
+!["sending.." message image](/assets/images/feedbackpage.png)
 </details>
 
 If used improperly, the form will provide feedback as well.
 <details> <summary>View example</summary>
 
-![Form feedback](/assets/images/required.png)
+![Form feedback image](/assets/images/required.png)
 </details>
 If the user sends an message, I will receive it as an email. EmailJS was used to add this feature.
 
 # Validation 
+No errors were found using the W3C HTML validator.
+ <details> <summary>View</summary>
+
+![HTML validotor image](/assets/images/html%20validator.png)
+</details>
 No errors were found using the W3C CSS validator.
 <details> <summary>View</summary>
 
