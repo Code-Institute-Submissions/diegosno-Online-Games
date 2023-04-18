@@ -72,6 +72,7 @@ document.addEventListener("DOMContentLoaded", function () {
     popUp.style.display = "none";
     overlay.style.display = "none";
   }
-  const restartButton = document.getElementById("restart");
+
+  const restartButton = document.querySelector("#restart");
   restartButton.addEventListener("click", restart);
 });

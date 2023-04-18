@@ -1,108 +1,134 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Project Goal
+My goal is to create an interactive website where people can play an online game.
 
-Welcome USER_NAME,
+## User Goal 
+Spend time playing a game online.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## Site Owner Goal 
+Create a website where people can spend time for fun. 
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+# User Experience 
 
-## Gitpod Reminders
+## Target Audience 
+Anyone of any age and sex can play the game, as the rules are simple and the site is intuitive. 
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## User Requirements and Expectations 
+The website's layout is clean, organized and responsive. 
 
-`python3 -m http.server`
+The information presented is concise and clear. 
 
-A blue button should appear to click: _Make Public_,
+Functions are present to make the website interactive and intuitive.
 
-Another blue button should appear to click: _Open Browser_.
+Accessibility is always kept in mind. 
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+# User Stories 
+- I want the contrast colors displayed to be nice and not hurt my eyes.
+- I want a website that has content that is easy to understand.
+- I want the website to be responsive so I can play on my phone or laptop. 
+- I want to navigate easily through the site.  
+- I want to be able to refresh the page easily.
+- I want to be able to start playing easily.  
+- I want to be able to see the choice I made and the scores. 
+- I want to know when I lost or when I won. 
+- I want to be able to send feedback or get in touch with the creator. 
+- I want to make sure my message was sent 
 
-A blue button should appear to click: _Make Public_,
+## Site Stories 
+- I want the website to be interactive, intuitive, and has a nice color contrast. 
+- I want that the information is organized and there are easy to navigate pages 
+- I want the user to be able to start playing right away.
+- I want the game to be engaging by providing constant feedback. 
+- I want the game to be over when the user wins or looses, and for them to know.
+- I want the user to be able to provide feedback and see my other projects. 
 
-Another blue button should appear to click: _Open Browser_.
+# Design 
+## Color scheme
+The colors were chosen based on the sky and outer space. I used a dark color for the header to simulate the night sky.
+<details> <summary>View header</summary>
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+![Header image](/assets/images/header.png)</details>
+Then a light blue color for the body of the page to simulate the sky color.
+<details> <summary>View example</summary>
 
-To log into the Heroku toolbelt CLI:
+![Body image](/assets/images/bodycolor.png)
+</details>
+And finally a rainbow for the footer to simulate that you are over the rainbow!
+<details> <summary>View footer</summary>
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+![Footer image](/assets/images/rainbowfooter.png)</details>
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+## Fonts
+ I used Google fonts for the website's elements. Two main fonts were used to keep things simple: Press Start 2P for the header to give it a pixelated effect, often related to online games.
+ <details> <summary>View header font</summary>
 
-------
+![Header font image](/assets/images/headerfont.png)
+</details>
+And Russo One for the rest of the elements as it is easy to read. 
+ <details> <summary>View body font</summary>
 
-## Release History
+![Header font image](/assets/images/body%20font.png)
+</details>
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+# Structure and features
+The structure of the website was designed in a way to keep the header on top and the rest of the content below of it, with the footer being at the bottom, which also includes an icon to the developer's Github page.  Navigation is easily identifiable on the top right corner, and the h1 element is clickable on each of the pages to provide with a refresh option to the user.  The website has three pages, a welcome page, the game page, and the feedback page. It is important to note that all main headings texts were created in a way to create emotions in the user, and give a good user experience. 
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+## Welcome Page
+This page contains the game's instructions as well as a start button which is clickable and responsive. 
+<details> <summary>View welcome page</summary>
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+![Form feedback](/assets/images/welcomepage.png)
+</details>
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+## Game Page
+The page contains the game itself. An h2 is displayed to prompt the user to make a choice, with the options to choose from right beneath. I decided use emojis as the options to catch the user's attention. They are also responsive, and on click they will provide the user with feedback about the game. Right below a message will display "YAY!" when the user wins, "DRAW!" if it is a tie, and NAW! if the CPU wins. The user's and CPU choices will update as well as the scoreboard.
+ <details> <summary>View game page</summary>
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+![Popup message](/assets/images/gamepage.png)
+</details>
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+ When the game comes to an end a popup is shown up to let the user know if they won or not and a big button to restart the game. I added the popup because I didn't want the user to be taken outside of the page as this can sometimes be tiresome. The popup contains a restart button which on click resets the game values and closes the popup to allow the user to play again. 
+ <details> <summary>View popup</summary>
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+![Popup message](/assets/images/popup.png)
+</details>
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+## Feedback Page 
+The feedback page contains a form where the user can provide general feedback, and a submit button which is responsive and provides feedback to the user's request by changing its text from "submit" to "sending.." to "sent".
+ <details> <summary>View feedback page</summary>
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+![Popup message](/assets/images/feedbackpage.png)
+</details>
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+If used improperly, the form will provide feedback as well.
+<details> <summary>View example</summary>
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+![Form feedback](/assets/images/required.png)
+</details>
+If the user sends an message, I will receive it as an email. EmailJS was used to add this feature.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+# Validation 
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+# Wireframes 
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+# Technologies Used
+* HTML 
+* CSS
+* Javascript
 
-------
+# Frameworks, Libraries and Tools 
+[Am I Responsive](https://amiresponsive.co.uk/) was used to show how the website is responsive to different screen sizes at the top of the page. 
 
-## FAQ about the uptime script
 
-**Why have you added this script?**
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
 
-**How will this affect me?**
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
 
-**So….?**
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
 
-**Can I opt out?**
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
 
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+ 
