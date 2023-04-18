@@ -107,6 +107,11 @@ If used improperly, the form will provide feedback as well.
 If the user sends an message, I will receive it as an email. EmailJS was used to add this feature.
 
 # Validation 
+No errors were found using the W3C CSS validator.
+<details> <summary>View</summary>
+
+![W3C validator image](/assets/images/css%20validator.png)
+</details>
 
 
 # Wireframes 
