@@ -116,6 +116,11 @@ form {
   background: #f1fcff;
 }
 
+input:focus,
+textarea:focus {
+  outline: 2px solid #ccc;
+}
+
 /*INDEX.HTML STYLES*/
 .rules {
   display: block;
