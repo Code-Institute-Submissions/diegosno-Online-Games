@@ -1,3 +1,7 @@
+![Am I Responsive image](/assets/images/amiresponsive.png)</details>
+
+
+
 # Project Goal
 My goal is to create an interactive website where people can play an online game.
 
@@ -181,7 +185,8 @@ I also performed testing on the Google Chrome and Safari browsers.
 | Console was showing that the value for restartButton was null even thought it was assigned | Added an if statement  |
 | Text was appearing below the popup on the game page| Changed popup height to 100% |
 | H1 was not clickable in the pages | Moved its position below the header element|
-| Popup was covering the h1 when showing on game page| Moved changed its top %|
+| Popup was covering the h1 when showing on game page| Moved it down by changing its top %|
+| When the popup showed up there was space left below the footer| Changed popup and overlay position from absolute to fixed|
 
 
 
