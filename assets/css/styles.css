@@ -64,6 +64,7 @@ h2 {
 
 /*FORM STYLES*/
 form {
+  font-size: 1rem;
   position: relative;
   box-sizing: border-box;
   text-align: center;
@@ -318,7 +319,7 @@ footer {
 }
 
 #icons {
-  font-size: 0.8rem;
+  font-size: 1rem;
   position: absolute;
   align-items: center;
   left: 10px;
@@ -498,23 +499,23 @@ footer {
 
   /*FORM STYLES*/
   #form {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
 
   #name {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
   }
 
   #email {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
 
   #feedback {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
 
   #submit {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
 
   /*FOOTER STYLES*/
@@ -526,7 +527,7 @@ footer {
 
   #icons {
     align-items: center;
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     position: absolute;
     left: 5px;
     bottom: 5px;
