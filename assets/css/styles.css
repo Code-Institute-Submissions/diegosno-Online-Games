@@ -280,7 +280,7 @@ span {
 
 footer {
   height: 100px;
-  position: absolute;
+  position: fixed;
   width: 100%;
   left: 0;
   bottom: 0;
@@ -524,6 +524,7 @@ footer {
     height: 60px;
     width: 100%;
     z-index: 2;
+    position: fixed;
   }
 
   #icons {
