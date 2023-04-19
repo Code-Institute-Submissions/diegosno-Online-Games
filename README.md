@@ -124,7 +124,7 @@ No errors were found using the W3C CSS validator.
 
 ## JavaScript
 
-Minor details were found using the JSHint Validator 
+No errors, only minor details were found using the JSHint Validator
 
 <details> <summary>script.js</summary>
 
@@ -139,7 +139,18 @@ Minor details were found using the JSHint Validator
 ![JavaScript validator image](/assets/images/formjavascript.png)
 </details>
 
+## Accessibility 
 
+The WAVE WebAIM found no errors on the website, only minor warnings regarding the noscript element. 
+<details> <summary>View</summary>
+
+
+![JavaScript validator image](/assets/images/wave%20index.png)
+
+![JavaScript validator image](/assets/images/wave%20game.png)
+
+![JavaScript validator image](/assets/images/wave%20feedback.png)
+</details>
 
 
 
