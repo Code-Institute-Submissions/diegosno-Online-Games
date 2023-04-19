@@ -1,7 +1,9 @@
 # Online Games
 ![Am I Responsive image](/assets/images/amiresponsive.png)</details>
-[View Live Project](https://diegosno.github.io/Online-Games/)
+
 by: Diego Serrano
+
+[View Live Project](https://diegosno.github.io/Online-Games/)
 
 
 # Project Goal
@@ -27,7 +29,7 @@ Functions are present to make the website interactive and intuitive.
 
 Accessibility is always kept in mind. 
 
-# User Stories 
+## User Stories 
 - I want the contrast colors displayed to be nice and not hurt my eyes.
 - I want a website that has content that is easy to understand.
 - I want the website to be responsive so I can play on my phone or laptop. 
@@ -44,8 +46,9 @@ Accessibility is always kept in mind.
 - I want that the information is organized and there are easy to navigate pages 
 - I want the user to be able to start playing right away.
 - I want the game to be engaging by providing constant feedback. 
-- I want the game to be over when the user wins or looses, and for them to know.
-- I want the user to be able to provide feedback and see my other projects. 
+- I want the game to be over when the user wins or loses, and for them to know.
+- I want the user to be able to provide feedback.
+- I want the user to be able to be linked to a page so he/she can see my other projects. 
 
 # Design 
 ## Color scheme
@@ -53,15 +56,19 @@ The colors were chosen based on the sky and outer space. I used a dark color for
 <details> <summary>View header</summary>
 
 ![Header image](/assets/images/header.png)</details>
+
 Then a light blue color for the body of the page to simulate the sky color.
 <details> <summary>View example</summary>
 
 ![Body image](/assets/images/bodycolor.png)
 </details>
+
 And finally a rainbow for the footer to simulate that you are over the rainbow!
 <details> <summary>View footer</summary>
 
-![Footer image](/assets/images/rainbowfooter.png)</details>
+![Footer image](/assets/images/footer.png)</details>
+
+I did this with the objective to create a cozy layout. 
 
 ## Fonts
  I used Google fonts for the website's elements. Two main fonts were used to keep things simple: Press Start 2P for the header to give it a pixelated effect, often related to online games.
@@ -190,6 +197,40 @@ I also performed testing on the Google Chrome and Safari browsers.
 | Popup was covering the h1 when showing on game page| Moved it down by changing its top %|
 | When the popup showed up there was space left below the footer| Changed popup and overlay position from absolute to fixed|
 
+# Deployment 
+
+The site was deployed using GitHub pages. To publish the website from the GitHub repository, I followed these steps:
+
+Go to the Settings tab in your GitHub repository.
+Select Pages from the left-hand menu.
+Under Source, select main Branch.
+Click Save.
+Wait for GitHub to refresh, and the website will be published from the repository.
+The website's link will appear: "Your site is published at https://yourusername.github.io/Online-Games/".
+
+# Credits
+
+The following videos were watched to take inspiration from. Please note  I did not use any code from them, I created my own code based on the tutorials. 
+
+[How To Code Rock Paper Scissors In JavaScript](https://www.youtube.com/watch?v=1yS-JV4fWqY)
+
+[A game of Rock Paper Scissors written in JavaScript ✋](https://www.youtube.com/watch?v=n1_vHArDBRA)
+
+[Learn JavaScript by Building 7 Games - Full Course](https://www.youtube.com/watch?v=ec8vSKJuZTk&t=402s)
+
+[Contact Form with Email Js | Send Emails using JavaScript through Email Js | Email Js Tutorial](https://www.youtube.com/watch?v=5EZsRnJpUNU)
+
+For the website's font I used
+[Google Fonts](https://fonts.google.com/)
+
+For the GitHub icon I used 
+[Font Awesome](https://fontawesome.com/)
+
+
+[EmailJS](https://www.emailjs.com/) was used to provide the service for the submit form. 
+ 
+
+And I also would like to thank my mentor Mo Shami who gave me really valuable advice on how to make my project better and made me feel motivated and not alone throughout the project!
 
 
 
