@@ -336,6 +336,7 @@ footer {
   font-size: 1.5rem;
   color: #535353;
 }
+
 #icons a:hover {
   color: #6e7284;
 }
@@ -482,7 +483,7 @@ footer {
 
   /*POPUP STYLES*/
   #popup {
-    top: 23%;
+    top: 20%;
     bottom: 0;
     height: 100%;
   }
