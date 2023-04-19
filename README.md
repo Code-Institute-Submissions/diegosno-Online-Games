@@ -100,7 +100,7 @@ The feedback page contains a form where the user can provide general feedback, a
 </details>
 
 If used improperly, the form will provide feedback as well.
-<details> <summary>View example</summary>
+<details> <summary>View</summary>
 
 ![Form feedback image](/assets/images/required.png)
 </details>
@@ -172,6 +172,16 @@ To test the performance I used Google Lighthouse. Tests ran smoothly with just a
 
 I performed testing using an iPhone 13 Pro and a MacBook Pro, 13-inch, M1, 2020. 
 
+I also performed testing on the Google Chrome and Safari browsers. 
+
+## Bugs
+
+| Bug | Solution |
+| :-------: | :-------: |
+| Console was showing that the value for restartButton was null even thought it was assigned | Added an if statement  |
+| Text was appearing below the popup on the game page| Changed popup height to 100% |
+| H1 was not clickable in the pages | Moved its position below the header element|
+| Popup was covering the h1 when showing on game page| Moved changed its top %|
 
 
 
