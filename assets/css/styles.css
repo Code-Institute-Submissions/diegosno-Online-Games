@@ -236,7 +236,7 @@ span {
 
 #popup {
   display: none;
-  position: absolute;
+  position: fixed;
   top: 23%;
   left: 0;
   right: 0;
@@ -371,7 +371,7 @@ footer {
   /*POPUP STYLES*/
   #popup {
     display: none;
-    position: absolute;
+    position: fixed;
     height: 100%;
     top: 20%;
   }
