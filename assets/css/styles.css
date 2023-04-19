@@ -22,7 +22,7 @@ header {
 
 nav {
   position: absolute;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   right: 10px;
   top: 10px;
 }
@@ -30,7 +30,7 @@ nav {
 nav a:hover {
   cursor: pointer;
   color: #6e7284;
-  font-size: 1.8rem;
+  font-size: 2rem;
   transition: all 0.05s ease-in-out;
 }
 
