@@ -15,6 +15,7 @@ Spend time playing a game online.
 ## Site Owner Goal 
 Create a website where people can spend time for fun. 
 
+
 # User Experience 
 
 ## Target Audience 
@@ -50,7 +51,20 @@ Accessibility is always kept in mind.
 - I want the user to be able to provide feedback.
 - I want the user to be able to be linked to a page so he/she can see my other projects. 
 
+
 # Design 
+## Wireframes
+
+Two main wireframes were used to design the whole layout. I wanted the layout to remain the same throughout the 3 pages (index, game, and feedback), and i wanted the website to look the same on mobile versions but with different proportions. I wanted the popup window not to interfere with the original design so I blended it into the page.
+
+<details> <summary>View wireframe for pages</summary>
+
+![Header image](/assets/images/wireframe.png)</details>
+
+<details> <summary>View wireframe for popup</summary>
+
+![Header image](/assets/images/wireframe%20popup.png)</details>
+
 ## Color scheme
 The colors were chosen based on the sky and outer space. I used a dark color for the header to simulate the night sky.
 <details> <summary>View header</summary>
@@ -81,6 +95,7 @@ And Russo One for the rest of the elements as it is easy to read.
 
 ![Body font image](/assets/images/body%20font.png)
 </details>
+
 
 # Structure and features
 The structure of the website was designed in a way to keep the header on top and the rest of the content below of it, with the footer being at the bottom, which also includes an icon to the developer's Github page.  Navigation is easily identifiable on the top right corner, and the h1 element is clickable on each of the pages to provide with a refresh option to the user.  The website has three pages, a welcome page, the game page, and the feedback page. It is important to note that all main headings texts were created in a way to create emotions in the user, and give a good user experience. 
@@ -118,6 +133,7 @@ If used improperly, the form will provide feedback as well.
 ![Form feedback image](/assets/images/required.png)
 </details>
 If the user sends an message, I will receive it as an email. EmailJS was used to add this feature.
+
 
 # Validation 
 ## HTML 
@@ -181,6 +197,7 @@ To test the performance I used Google Lighthouse. Tests ran smoothly with just a
 ![JavaScript validator image](/assets/images/lighthouse%20form.png)
 </details>
 
+
 ## Testing 
 
 I performed testing using an iPhone 13 Pro and a MacBook Pro, 13-inch, M1, 2020. 
@@ -197,6 +214,8 @@ I also performed testing on the Google Chrome and Safari browsers.
 | Popup was covering the h1 when showing on game page| Moved it down by changing its top %|
 | When the popup showed up there was space left below the footer| Changed popup and overlay position from absolute to fixed|
 
+
+
 # Deployment 
 
 The site was deployed using GitHub pages. To publish the website from the GitHub repository, I followed these steps:
@@ -207,6 +226,8 @@ Under Source, select main Branch.
 Click Save.
 Wait for GitHub to refresh, and the website will be published from the repository.
 The website's link will appear: "Your site is published at https://yourusername.github.io/Online-Games/".
+
+
 
 # Credits
 
@@ -220,15 +241,21 @@ The following videos were watched to take inspiration from. Please note  I did n
 
 [Contact Form with Email Js | Send Emails using JavaScript through Email Js | Email Js Tutorial](https://www.youtube.com/watch?v=5EZsRnJpUNU)
 
+[Marvel App](https://www.marvelapp.com/) was used to create the wireframes. 
+
+[Am I responsive](https://amiresponsive.co.uk/) was used to create the multi-device mockup. 
+
+
+
 For the website's font I used
 [Google Fonts](https://fonts.google.com/)
+
 
 For the GitHub icon I used 
 [Font Awesome](https://fontawesome.com/)
 
-
 [EmailJS](https://www.emailjs.com/) was used to provide the service for the submit form. 
- 
+
 
 And I also would like to thank my mentor Mo Shami who gave me really valuable advice on how to make my project better and made me feel motivated and not alone throughout the project!
 

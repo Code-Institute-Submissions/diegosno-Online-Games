@@ -1,5 +1,8 @@
+// WAIT FOR DOM TO LOAD
 document.addEventListener("DOMContentLoaded", function () {
+  // DEFINE GAME OPTIONS
   const cpuOptions = ["🪨", "🧻", "✂️"];
+  // GET ELEMENTS TO SET VARIABLES
   const options = document.getElementsByClassName("button");
   const userChoiceSpan = document.getElementById("user-choice");
   const cpuChoiceSpan = document.getElementById("cpu-choice");
@@ -9,9 +12,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const popUp = document.getElementById("popup");
   const overlay = document.getElementById("overlay");
   const popupText = document.getElementById("popup-text");
+  // SET USER AND CPU SCORES TO 0
   let userScore = 0;
   let cpuScore = 0;
 
+  // LOOP THROUGH OPTIONS AND ADD CLICK EVENT LISTENERS
   for (let i = 0; i < options.length; i++) {
     options[i].addEventListener("click", (event) => {
       const userChoice = event.target.textContent;
@@ -25,6 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+  // CHECK GAME RESULT AND UPDATE MESSAGE
   function checkResult() {
     const userChoice = userChoiceSpan.textContent.toLowerCase();
     const cpuChoice = cpuChoiceSpan.textContent.toLowerCase();
@@ -39,6 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
+  // ADD POINTS TO USER AND CPU DEPENDING ON THE RESULT
   function addPoints(result) {
     switch (true) {
       case result.startsWith("YAY!"):
@@ -52,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     userScoreSpan.textContent = userScore;
     cpuScoreSpan.textContent = cpuScore;
-
+    // CHECK IF SCORE REACHED 5 AND DISPLAY POPUP
     if (userScore === 5 || cpuScore === 5) {
       popUp.style.display = "block";
       overlay.style.display = "block";
@@ -60,11 +67,14 @@ document.addEventListener("DOMContentLoaded", function () {
         userScore === 5 ? "YOU WON!" : "CPU WON, TRY AGAIN!";
     }
   }
+
+  // GET REFERENCE TO RESTART BUTTON AND ADD CLICK EVENT LISTENER
   const restartButton = document.querySelector("#restart");
   if (restartButton) {
     restartButton.addEventListener("click", restart);
   }
 
+  // RESET GAME TO INITIAL STATE
   function restart() {
     userScore = 0;
     cpuScore = 0;
