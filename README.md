@@ -1,5 +1,7 @@
+# Online Games
 ![Am I Responsive image](/assets/images/amiresponsive.png)</details>
-
+[View Live Project](https://diegosno.github.io/Online-Games/)
+by: Diego Serrano
 
 
 # Project Goal
