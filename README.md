@@ -152,6 +152,26 @@ The WAVE WebAIM found no errors on the website, only minor warnings regarding th
 ![JavaScript validator image](/assets/images/wave%20feedback.png)
 </details>
 
+## Performance
+
+To test the performance I used Google Lighthouse. Tests ran smoothly with just a minor detail in the feedback page regarding an issue logged into the panel in Chrome Devtools. 
+
+<details> <summary>View</summary>
+
+
+![JavaScript validator image](/assets/images/lighthouse%20index.png)
+
+![JavaScript validator image](/assets/images/lighthouse%20game.png)
+
+![JavaScript validator image](/assets/images/lighthouse%20form.png)
+
+![JavaScript validator image](/assets/images/lighthouse%20form.png)
+</details>
+
+## Testing 
+
+I performed testing using an iPhone 13 Pro and a MacBook Pro, 13-inch, M1, 2020. 
+
 
 
 
