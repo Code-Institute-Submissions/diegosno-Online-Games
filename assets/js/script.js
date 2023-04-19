@@ -74,5 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   const restartButton = document.querySelector("#restart");
-  restartButton.addEventListener("click", restart);
+  if (restartButton) {
+    restartButton.addEventListener("click", restart);
+  }
 });
