@@ -223,6 +223,7 @@ span {
 
 /*POPUP STYLES*/
 #overlay {
+  position: fixed;
   pointer-events: none;
   display: none;
   position: fixed;
