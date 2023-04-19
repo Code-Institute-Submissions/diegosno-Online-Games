@@ -60,6 +60,10 @@ document.addEventListener("DOMContentLoaded", function () {
         userScore === 5 ? "YOU WON!" : "CPU WON, TRY AGAIN!";
     }
   }
+  const restartButton = document.querySelector("#restart");
+  if (restartButton) {
+    restartButton.addEventListener("click", restart);
+  }
 
   function restart() {
     userScore = 0;
@@ -71,10 +75,5 @@ document.addEventListener("DOMContentLoaded", function () {
     cpuChoiceSpan.textContent = "";
     popUp.style.display = "none";
     overlay.style.display = "none";
-  }
-
-  const restartButton = document.querySelector("#restart");
-  if (restartButton) {
-    restartButton.addEventListener("click", restart);
   }
 });
