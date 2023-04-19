@@ -372,7 +372,7 @@ footer {
   #popup {
     display: none;
     position: absolute;
-    height: 400px;
+    height: 100%;
     top: 20%;
   }
 
@@ -478,6 +478,7 @@ footer {
   #popup {
     top: 23%;
     bottom: 0;
+    height: 100%;
   }
 
   #popup-text {
