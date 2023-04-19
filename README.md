@@ -107,27 +107,39 @@ If used improperly, the form will provide feedback as well.
 If the user sends an message, I will receive it as an email. EmailJS was used to add this feature.
 
 # Validation 
+## HTML 
 No errors were found using the W3C HTML validator.
  <details> <summary>View</summary>
 
 ![HTML validotor image](/assets/images/html%20validator.png)
 </details>
+
+## CSS
 No errors were found using the W3C CSS validator.
+
 <details> <summary>View</summary>
 
-![W3C validator image](/assets/images/css%20validator.png)
+![W3C CSS validator image](/assets/images/css%20validator.png)
+</details>
+
+## JavaScript
+
+Minor details were found using the JSHint Validator 
+
+<details> <summary>script.js</summary>
+
+![JavaScript validator image](/assets/images/javascript1.png)
+
+![JavaScript validator image](/assets/images/javascript2.png)
+</details>
+
+<details> <summary>form.js</summary>
+
+
+![JavaScript validator image](/assets/images/formjavascript.png)
 </details>
 
 
-# Wireframes 
-
-# Technologies Used
-* HTML 
-* CSS
-* Javascript
-
-# Frameworks, Libraries and Tools 
-[Am I Responsive](https://amiresponsive.co.uk/) was used to show how the website is responsive to different screen sizes at the top of the page. 
 
 
 
