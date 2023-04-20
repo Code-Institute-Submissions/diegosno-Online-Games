@@ -1,5 +1,5 @@
 # Online Games
-![Am I Responsive image](/assets/images/amiresponsive.png)</details>
+![Am I Responsive image](/assets/images/READMEimages/amiresponsive.png)</details>
 
 by: Diego Serrano
 
@@ -59,28 +59,28 @@ Two main wireframes were used to design the whole layout. I wanted the layout to
 
 <details> <summary>View wireframe for pages</summary>
 
-![Header image](/assets/images/wireframe.png)</details>
+![Header image](/assets/images/READMEimages/wireframe.png)</details>
 
 <details> <summary>View wireframe for popup</summary>
 
-![Header image](/assets/images/wireframe%20popup.png)</details>
+![Header image](/assets/images/READMEimages/wireframepopup.png)</details>
 
 ## Color scheme
 The colors were chosen based on the sky and outer space. I used a dark color for the header to simulate the night sky.
 <details> <summary>View header</summary>
 
-![Header image](/assets/images/header.png)</details>
+![Header image](/assets/images/READMEimages/header.png)</details>
 
 Then a light blue color for the body of the page to simulate the sky color.
-<details> <summary>View example</summary>
+<details> <summary>View body</summary>
 
-![Body image](/assets/images/bodycolor.png)
+![Body image](/assets/images/READMEimages/bodycolor.png)
 </details>
 
 And finally a rainbow for the footer to simulate that you are over the rainbow!
 <details> <summary>View footer</summary>
 
-![Footer image](/assets/images/footer.png)</details>
+![Footer image](/assets/images/READMEimages/footer.png)</details>
 
 I did this with the objective to create a cozy layout. 
 
@@ -88,12 +88,12 @@ I did this with the objective to create a cozy layout.
  I used Google fonts for the website's elements. Two main fonts were used to keep things simple: Press Start 2P for the header to give it a pixelated effect, often related to online games.
  <details> <summary>View header font</summary>
 
-![Header font image](/assets/images/headerfont.png)
+![Header font image](/assets/images/READMEimages/headerfont.png)
 </details>
 And Russo One for the rest of the elements as it is easy to read. 
  <details> <summary>View body font</summary>
 
-![Body font image](/assets/images/body%20font.png)
+![Body font image](/assets/images/READMEimages/bodyfont.png)
 </details>
 
 
@@ -104,38 +104,38 @@ The structure of the website was designed in a way to keep the header on top and
 This page contains the game's instructions as well as a start button which is clickable and responsive. 
 <details> <summary>View welcome page</summary>
 
-![Form feedback](/assets/images/welcomepage.png)
+![Form feedback](/assets/images/READMEimages/welcomepage.png)
 </details>
 
 ## Game Page
 The page contains the game itself. An h2 is displayed to prompt the user to make a choice, with the options to choose from right beneath. I decided use emojis as the options to catch the user's attention. They are also responsive, and on click they will provide the user with feedback about the game. Right below a message will display "YAY!" when the user wins, "DRAW!" if it is a tie, and NAW! if the CPU wins. The user's and CPU choices will update as well as the scoreboard.
  <details> <summary>View game page</summary>
 
-![Game page](/assets/images/gamepage.png)
+![Game page](/assets/images/READMEimages/gamepage.png)
 </details>
 
  When the game comes to an end a popup is shown up to let the user know if they won or not and a big button to restart the game. I added the popup because I didn't want the user to be taken outside of the page as this can sometimes be tiresome. The popup contains a restart button which on click resets the game values and closes the popup to allow the user to play again. 
  <details> <summary>View popup</summary>
 
-![Popup message](/assets/images/popup.png)
+![Popup message](/assets/images/READMEimages/popup.png)
 </details>
 
 ## Feedback Page 
 The feedback page contains a form where the user can provide general feedback, and a submit button which is responsive and provides feedback to the user's request by changing its text from "submit" to "sending.." to "sent".
  <details> <summary>View feedback page</summary>
 
-!["sending.." message image](/assets/images/feedbackpage.png)
+!["sending.." message image](/assets/images/READMEimages/feedbackpage.png)
 </details>
 
 If used improperly, the form will provide feedback as well.
 <details> <summary>View</summary>
 
-![Form feedback image](/assets/images/required.png)
+![Form feedback image](/assets/images/READMEimages/required.png)
 </details>
 If the user sends an message, I will receive it as an email. EmailJS was used to add this feature.
-<details> <summary>View</summary>
+<details> <summary>View actual email</summary>
 
-![EmailJS image](/assets/images/emailjs.png)
+![EmailJS image](/assets/images/READMEimages/emailjs.png)
 </details>
 
 
@@ -144,7 +144,7 @@ If the user sends an message, I will receive it as an email. EmailJS was used to
 No errors were found using the W3C HTML validator.
  <details> <summary>View</summary>
 
-![HTML validotor image](/assets/images/html%20validator.png)
+![HTML validator image](/assets/images/READMEimages/htmlvalidator.png)
 </details>
 
 ## CSS
@@ -152,7 +152,7 @@ No errors were found using the W3C CSS validator.
 
 <details> <summary>View</summary>
 
-![W3C CSS validator image](/assets/images/css%20validator.png)
+![W3C CSS validator image](/assets/images/READMEimages/cssvalidator.png)
 </details>
 
 ## JavaScript
@@ -161,44 +161,60 @@ No errors, only minor details were found using the JSHint Validator
 
 <details> <summary>script.js</summary>
 
-![JavaScript validator image](/assets/images/javascript1.png)
+![JavaScript validator image](/assets/images/READMEimages/javascript1.png)
 
-![JavaScript validator image](/assets/images/javascript2.png)
+![JavaScript validator image](/assets/images/READMEimages/javascript2.png)
 </details>
 
 <details> <summary>form.js</summary>
 
 
-![JavaScript validator image](/assets/images/formjavascript.png)
+![JavaScript validator image](/assets/images/READMEimages/formjavascript.png)
 </details>
 
 ## Accessibility 
 
 The WAVE WebAIM found no errors on the website, only minor warnings regarding the noscript element. 
-<details> <summary>View</summary>
+<details> <summary>View for index page</summary>
 
 
-![JavaScript validator image](/assets/images/wave%20index.png)
+![Wave index page image](/assets/images/READMEimages/waveindex.png)
 
-![JavaScript validator image](/assets/images/wave%20game.png)
+</details>
 
-![JavaScript validator image](/assets/images/wave%20feedback.png)
+<details> <summary>View for game page</summary>
+
+![Wave game page image](/assets/images/READMEimages/wavegame.png)
+
+</details>
+
+<details> <summary>View for feedback</summary>
+
+![Wave feedback page image](/assets/images/READMEimages/wavefeedback.png)
+
 </details>
 
 ## Performance
 
 To test the performance I used Google Lighthouse. Tests ran smoothly with just a minor detail in the feedback page regarding an issue logged into the panel in Chrome Devtools. 
 
-<details> <summary>View</summary>
+<details> <summary>View for index page</summary>
 
 
-![JavaScript validator image](/assets/images/lighthouse%20index.png)
+![Lighthouse index page image](/assets/images/READMEimages/lighthouseindex.png)
 
-![JavaScript validator image](/assets/images/lighthouse%20game.png)
+</details>
 
-![JavaScript validator image](/assets/images/lighthouse%20form.png)
+<details> <summary>View for game page</summary>
 
-![JavaScript validator image](/assets/images/lighthouse%20form.png)
+![Lighthouse game page image](/assets/images/READMEimages/lighthousegame.png)
+
+</details>
+
+<details> <summary>View for feedback page</summary>
+
+![Lighthouse form page image](/assets/images/READMEimages/lighthouseform.png)
+
 </details>
 
 
