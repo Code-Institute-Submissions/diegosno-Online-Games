@@ -206,7 +206,7 @@ To test the performance I used Google Lighthouse. Tests ran smoothly with just a
 
 I performed testing using an iPhone 13 Pro and a MacBook Pro, 13-inch, M1, 2020. 
 
-I also performed testing on the Google Chrome and Safari browsers. 
+I also performed testing on the Chrome, Safari and Firefox browsers. 
 
 ## Bugs
 
