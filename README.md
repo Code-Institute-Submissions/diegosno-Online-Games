@@ -133,6 +133,10 @@ If used improperly, the form will provide feedback as well.
 ![Form feedback image](/assets/images/required.png)
 </details>
 If the user sends an message, I will receive it as an email. EmailJS was used to add this feature.
+<details> <summary>View</summary>
+
+![EmailJS image](/assets/images/emailjs.png)
+</details>
 
 
 # Validation 
