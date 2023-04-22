@@ -17,6 +17,9 @@
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.png" />
     <!-- STYLESHEET -->
     <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!--DARK MODE SCRIPT-->
+    <script src="dark-mode.js"></script>
   </head>
   <body>
     <!-- HEADER -->
@@ -32,24 +35,26 @@
       <a title="Refresh the page" href="game.html">ROCK, PAPER, SCISSORS</a>
     </h1>
 
-    <h2>Make a choice!</h2>
-
     <div class="play">
-      <button aria-label="Choose rock" class="button">🪨</button>
-      <button aria-label="Choose paper" class="button">🧻</button>
-      <button aria-label="Choose scissors" class="button">✂️</button>
+      <div class="top-row">
+        <h2>Make a choice!</h2>
+      </div>
+      <div class="bottom-row">
+        <button aria-label="Choose rock" class="button">🪨</button>
+        <button aria-label="Choose paper" class="button">🧻</button>
+        <button aria-label="Choose scissors" class="button">✂️</button>
+      </div>
     </div>
-
-    <span id="result"></span>
-
-    <div class="results">
-      <p>Your Choice: <span id="user-choice"></span></p>
-      <p>CPU Choice: <span id="cpu-choice"></span></p>
-    </div>
-
-    <h2 class="scoreboard">Scoreboard</h2>
+    <div class="result"><p id="result"></p></div>
 
     <div class="scores">
+      <br />
+
+      <p>Your Choice: <span id="user-choice"></span></p>
+      <p>CPU Choice: <span id="cpu-choice"></span></p>
+      <br />
+      <h2 class="scoreboard">Scoreboard</h2>
+
       <p>USER: <span id="user-score"></span></p>
       <p>CPU: <span id="cpu-score"></span></p>
     </div>

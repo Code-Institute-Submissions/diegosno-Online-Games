@@ -2,10 +2,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Russo+One&display=swap");
 
 /*GENERAL STYLES*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
 body {
+  background-color: #f1fcff;
   color: #535353;
   font-family: "Russo One", sans-serif;
-  background: #f1fcff;
   background-image: url();
 }
 
@@ -19,6 +26,11 @@ header {
   height: 90px;
   font-family: "Russo One", sans-serif;
   z-index: 999;
+}
+header.dark-mode {
+  background-color: #02051b;
+  background-image: url(/assets/images/nightstars.gif);
+  opacity: 0.2;
 }
 
 nav {
@@ -42,19 +54,20 @@ a {
 
 a:hover {
   cursor: pointer;
-  color: #6e7284;
+  color: #bebebe;
 }
 
 h1 {
   font-family: "Press Start 2P", cursive, sans-serif;
-  display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  left: 0;
-  right: 0;
+  position: fixed;
+  top: 20%;
+  left: 0%;
+  right: 0%;
   font-size: 2rem;
-  padding: 100px;
+  padding: 10px 10px 10px 10px;
 }
 
 h2 {
@@ -63,13 +76,18 @@ h2 {
   font-size: 1.5rem;
 }
 
-/*FORM STYLES*/
+/*FORM PAGE STYLES*/
+
 form {
+  top: 30%;
   font-size: 1rem;
-  position: relative;
+  position: fixed;
   box-sizing: border-box;
   text-align: center;
   align-items: center;
+  padding: 10px;
+  left: 0%;
+  right: 0%;
 }
 
 #name {
@@ -124,17 +142,29 @@ textarea:focus {
 
 /*INDEX.HTML STYLES*/
 .rules {
-  display: block;
+  font-size: 1rem;
+  top: 30%;
+  position: fixed;
+  box-sizing: border-box;
   text-align: center;
-  position: relative;
+  align-items: center;
+  padding: 10px;
+  left: 0%;
+  right: 0%;
+}
+.rules p {
+  padding: 5px;
 }
 
 #start {
+  display: inline-block;
+  position: relative;
   font-family: "Russo One", sans-serif;
-  padding: 10px 10px;
+  padding: 10px;
   background: #f1fcff;
   color: #535353;
-  font-size: 2rem;
+  background-color: transparent;
+  font-size: 1.5rem;
   border: none;
   cursor: pointer;
 }
@@ -146,18 +176,31 @@ textarea:focus {
 }
 
 /*GAME.HTML STYLES */
-.make-a-choice {
-  justify-content: center;
-  font-size: 1.5rem;
-}
 
 .play {
+  top: 30%;
+  left: 0;
+  right: 0;
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 10px;
+  position: fixed;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.top-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom-row {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(1, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  justify-content: space-around;
+  justify-items: center;
+  align-items: center;
 }
 
 .button {
@@ -166,7 +209,9 @@ textarea:focus {
   outline: none;
   font-size: 3rem;
   cursor: pointer;
-  width: 100%;
+  align-items: center;
+  text-align: center;
+  grid-column: span 1;
 }
 
 .button:hover {
@@ -175,56 +220,23 @@ textarea:focus {
 }
 
 .result {
-  justify-content: center;
-}
-
-.results {
-  display: block;
-  text-align: center;
-}
-
-#user-choice {
-  justify-content: center;
-  text-align: center;
-  position: relative;
-}
-
-#cpu-choice {
-  justify-content: center;
-  text-align: center;
-  position: relative;
-}
-
-#result {
-  display: flex;
   padding: 10px;
-  height: 10px;
-  justify-content: space-around;
-  font-size: 1.5rem;
-}
-
-span {
-  padding: 5px;
-}
-
-.scoreboard {
+  top: 48%;
+  right: 0;
+  left: 0;
+  position: fixed;
   justify-content: center;
-  font-size: 1.5rem;
+  text-align: center;
 }
 
 .scores {
-  display: flex;
-  flex-wrap: nowrap;
+  padding: 10px;
+  top: 50%;
+  right: 0;
+  left: 0;
+  position: fixed;
   justify-content: center;
   text-align: center;
-}
-
-#user-score {
-  position: relative;
-}
-
-#cpu-score {
-  position: relative;
 }
 
 /*POPUP STYLES*/
@@ -244,7 +256,7 @@ span {
 #popup {
   display: none;
   position: fixed;
-  top: 0;
+  top: 0px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -259,7 +271,10 @@ span {
   font-size: 2rem;
   color: #535353;
   background: #f1fcff;
-  padding: 50px;
+  top: 30%;
+  left: 0;
+  right: 0;
+  position: fixed;
   box-sizing: border-box;
   margin: 0;
 }
@@ -268,12 +283,15 @@ span {
   background: #f1fcff;
   color: #535353;
   font-size: 1.5rem;
-  border: none;
+  top: 40%;
+  left: 0;
+  right: 0;
   position: fixed;
-  top: 50%;
-  left: 50%;
+  text-align: center;
+  width: 100px;
+
+  margin: 0 auto;
   font-family: "Russo One", sans-serif;
-  transform: translate(-50%, -50%);
   cursor: pointer;
 }
 
@@ -289,6 +307,7 @@ footer {
   height: 100px;
   position: fixed;
   width: 100%;
+
   left: 0;
   bottom: 0;
   background-color: #ffffffa2;
@@ -327,10 +346,10 @@ footer {
 
 #icons {
   font-size: 0.8rem;
-  position: absolute;
   align-items: center;
-  left: 10px;
   bottom: 5px;
+  left: 5px;
+  position: absolute;
 }
 
 #icons a {
@@ -356,10 +375,16 @@ footer {
 
   h1 {
     font-family: "Press Start 2P", cursive;
-    display: flex;
-    justify-content: center;
+
     font-size: 1.5rem;
-    padding: 70px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    top: 20%;
+    left: 0%;
+    right: 0%;
+    padding: 10px 10px 10px 10px;
   }
 
   h2 {
@@ -387,8 +412,10 @@ footer {
   #popup-text {
     font-size: 1.2rem;
     color: #535353;
-    padding: 0px;
-    box-sizing: border-box;
+    top: 30%;
+    left: 0;
+    right: 0;
+    position: fixed;
     margin: 0;
   }
 
@@ -396,12 +423,19 @@ footer {
     font-size: 1.2rem;
     color: #4e4e4e;
     font-family: "Russo One", sans-serif;
-    top: 30%;
+    top: 40%;
+    left: 0;
+    right: 0;
+    position: fixed;
+    background-color: transparent;
     cursor: pointer;
+    width: 100px;
+
+    margin: 0 auto;
   }
 }
 
-@media (max-width: 370px) {
+@media (max-width: 410px) {
   /*GENERAL STYLES*/
   header {
     position: fixed;
@@ -426,10 +460,16 @@ footer {
 
   h1 {
     font-family: "Press Start 2P", cursive;
-    display: flex;
+    font-size: 1.2rem;
     justify-content: center;
-    font-size: 1rem;
-    padding: 60px;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    top: 20%;
+    left: 0%;
+    right: 0%;
+
+    padding: 10px 10px 10px 10px;
   }
 
   h2 {
@@ -441,59 +481,69 @@ footer {
 
   /*INDEX.HTML STYLES*/
   .rules {
-    padding: 20px;
     font-size: 0.8rem;
-    display: block;
+    top: 30%;
+    position: fixed;
+    box-sizing: border-box;
     text-align: center;
-    position: relative;
+    align-items: center;
+    padding: 10px;
+    left: 0%;
+    right: 0%;
   }
 
   #start {
     display: inline-block;
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-family: "Russo One", sans-serif;
-    padding: 10px;
     color: #535353;
-    position: relative;
+    padding: 10px;
+    background-color: transparent;
     border: none;
     cursor: pointer;
   }
 
   /*GAME.HTML STYLES*/
+
+  .play {
+    top: 30%;
+  }
+
   .button {
     font-size: 1.5rem;
-    cursor: pointer;
-  }
-  #result {
-    font-size: 1rem;
-  }
-
-  .results {
-    font-size: 0.8rem;
-  }
-
-  .scoreboard {
-    display: grid;
-    justify-content: center;
-    font-size: 1rem;
   }
 
   .scores {
     font-size: 0.8rem;
   }
 
+  /* FORM PAGE STYLES */
+
+  form {
+    display: inline-block;
+    top: 30%;
+    font-size: 0.8rem;
+    position: fixed;
+    box-sizing: border-box;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+    left: 0%;
+    right: 0%;
+  }
+
   /*POPUP STYLES*/
   #popup {
-    padding: 50px;
+    padding: 0px;
     bottom: 0;
     height: 100%;
   }
 
   #popup-text {
+    position: relative;
     font-size: 1rem;
     color: #535353;
-    padding: 10px;
-    box-sizing: border-box;
+    top: 30%;
     margin: 0;
   }
 
@@ -501,14 +551,28 @@ footer {
     font-size: 1rem;
     color: #4e4e4e;
     font-family: "Russo One", sans-serif;
-
-    top: 50%;
+    top: 40%;
+    left: 0;
+    right: 0;
+    position: fixed;
+    margin: 0 auto;
+    width: 100px;
+    text-align: center;
     cursor: pointer;
   }
 
-  /*FORM STYLES*/
-  #form {
+  /*FORM PAGE STYLES*/
+
+  form {
+    top: 30%;
     font-size: 0.8rem;
+    position: fixed;
+    box-sizing: border-box;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+    left: 0%;
+    right: 0%;
   }
 
   #name {

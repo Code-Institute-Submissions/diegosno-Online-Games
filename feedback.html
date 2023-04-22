@@ -17,6 +17,9 @@
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.png" />
     <!-- STYLESHEET -->
     <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!--DARK MODE SCRIPT-->
+    <script src="dark-mode.js"></script>
   </head>
   <body>
     <!-- HEADER -->
@@ -28,9 +31,11 @@
     </header>
 
     <!-- PAGE CONTENT -->
-    <h1><a href="feedback.html">YOUR OPINION COUNTS!</a></h1>
-    <h2>How can we improve?</h2>
+
+    <h1 class="opinion"><a href="feedback.html">YOUR OPINION COUNTS!</a></h1>
+
     <form id="form" method="GET">
+      <h2>How can we improve?</h2>
       <label for="name">Name</label><br />
       <input id="name" type="text" placeholder="Your name" required /><br />
 
